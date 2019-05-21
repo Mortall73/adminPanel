@@ -1,0 +1,18 @@
+.add-widget {
+    display: block;
+    border-width: 3px;
+    border-color: rgb(238, 240, 252);
+    border-style: dashed;
+    border-radius: 3px;
+    font-size: 24px;
+    font-weight: 300;
+    color: $blue;
+    text-decoration: none;
+    padding: 50px 0;
+    text-align: center;
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: rgba(238, 240, 252, .5);
+    }
+}

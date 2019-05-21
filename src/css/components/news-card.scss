@@ -1,0 +1,111 @@
+.news-card {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 9px 9px 0px rgba(231, 232, 236, 0.75);
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+      
+    .news-card__img {
+        height: 190px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: block;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+
+        img {
+            display: block;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .news-card__img:hover + .news-card__settings {
+        opacity:  1;
+        visibility: visible;
+        z-index: 2;
+        top: 70px;
+    }
+
+    .news-card__settings {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: auto;
+        text-align: center;
+        z-index: 0;
+        opacity:  0;
+        visibility: hidden;
+        transition: all .3s;
+
+        &:hover {
+            opacity:  1;
+            visibility: visible;
+            z-index: 2;
+            top: 70px;
+        }
+        
+        a {
+            display: inline-block;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0px 9px 9px 0px rgba(231, 232, 236, 0.15);
+            width: 46px;
+            height: 46px;
+            margin: 0 7px;
+            position: relative;
+            transition: background-color .2s;
+
+            svg {
+                overflow: hidden;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                stroke: $blue;
+                transition: stroke .2s;
+                width: 24px;
+                height: 24px;
+            }
+            &:hover {
+                background-color: $blue;
+                svg {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+
+    .news-card__body {
+        padding:  20px;
+    }
+
+    .news-card__title {
+        color: $main;
+        font-size: 16px;
+        display: inline-block;
+        margin-bottom:  15px;
+        text-decoration: none;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+    .news-card__text {
+        margin: 0;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}

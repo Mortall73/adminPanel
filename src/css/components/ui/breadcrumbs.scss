@@ -1,0 +1,49 @@
+.breadcrumbs {
+    margin: 0 -10px 20px -10px;
+    font-size: 0;
+    .breadcrumb {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        color: $gray;
+        font-weight: 700;
+        padding: 0 10px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 4px;
+            height: 4px;
+            background-color: $blue;
+            border-radius: 50%;
+            margin-top: -2px;
+            margin-right: -2px;
+            display: block;
+        }
+
+        &.active {
+            color: $main;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+
+        .cs-blue {
+            color: $blue;
+        }
+    }
+}
+.main-content__header {
+    .breadcrumbs {
+        .breadcrumb {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}

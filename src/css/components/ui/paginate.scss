@@ -1,0 +1,50 @@
+.paginate {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+
+    .paginate__item {
+        display: block;
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 1;
+        position: relative;
+        overflow: hidden;
+        border-radius: 2px;
+        box-shadow: 0 0 1px 0 #adadad;
+        margin: 5px;
+
+        &:hover {
+            a {
+                background-color: transparentize($blue, .3);
+                color: #fff;
+            }
+
+        }
+
+        &.active {
+            a {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+
+        a {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            color: #c0c3cc;
+            text-decoration: none;
+            text-align: center;
+            line-height: 22px;
+            transition: all .2s;
+            background-color: #fff;
+        }
+    }
+}

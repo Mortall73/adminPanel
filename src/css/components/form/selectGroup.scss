@@ -1,0 +1,60 @@
+.form-block {
+
+    .form-block__select-wrap {
+        position: relative;
+        display: block;
+
+        .form-block__select-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            width: 6px;
+            height: 6px;
+            margin-top: -3px;
+            background: url('/static/img/icons/select_icon.png') center no-repeat;
+            background-size: contain;
+            transform: rotate(0deg);
+            transition: transform .2s ease;
+        }
+
+        &.has-icon {
+            .icon   {
+                position: absolute;
+                top: 50%;
+                margin-top: -8px;
+                left: 17px;
+                width: 14px;
+                height: 14px;
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .form-block__select {
+                padding-left: 50px;
+            }
+        }
+    }
+    .form-block__select {
+        color: $main;
+        font-size: 15px;
+        font-family: 'Circe', Arial, "Helvetica Neue", Helvetica, sans-serif;
+        border-width: 1px;
+        border-color: rgb(238, 240, 252);
+        border-style: solid;
+        border-radius: 4px;
+        padding: 12px 22px;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        background: #fff;
+        appearance: none;
+        line-height: 1;
+
+        &:focus {
+            + .form-block__select-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

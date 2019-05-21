@@ -1,0 +1,80 @@
+.main-content__header {
+    padding: 18px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-content__title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .main-content__actions {
+        display: flex;
+        align-items: center;
+        .notifications {
+            display: inline-block;
+            width: 11px;
+            height: 15px;
+            background: url('/static/img/icons/notify.png') center no-repeat;
+            background-size: contain;
+            margin-right: 10px;
+
+            &.has-notify {
+                background: url('/static/img/icons/has_notify.png') center no-repeat;
+                background-size: contain;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -1px;
+                    right: -3px;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    border: 1px solid $blue;
+                }
+            }
+        }
+        .logout {
+            display: inline-block;
+            width: 11px;
+            height: 15px;
+            background: url('/static/img/icons/logout.png') center no-repeat;
+            background-size: contain;
+            margin: 0 10px;
+        }
+        .person-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $blue;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            margin-left: 10px;
+
+            span {
+                font-size: 14px;
+                text-transform: uppercase;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                white-space: nowrap;
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 14px;
+            }
+
+        }
+    }
+}
+.btns-row {
+    padding:  10px 0;
+}

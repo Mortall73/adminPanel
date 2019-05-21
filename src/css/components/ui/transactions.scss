@@ -1,0 +1,131 @@
+.last-transactions {
+    border-radius: 4px;
+    background-color: rgb(248, 249, 251);
+    box-shadow: 0px 9px 9px 0px rgba(231, 232, 236, 0.75);
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+
+    .last-transactions__header {
+        padding:  20px 24px;
+        position: relative;
+    }
+    .last-transactions__title {
+        font-size: 16px;
+        margin: 0;
+        color: $blue;
+    }
+    .last-transactions__icon {
+        width: 20px;
+        height: 24px;
+        background: url('/static/img/icons/refresh.png') center no-repeat;
+        position: absolute;
+        display: block;
+        right: 24px;
+        top: 50%;
+        margin-top: -12px;
+    }
+
+    .last-transactions__list {
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+
+        .last-transaction {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            padding: 12px 25px;
+            box-sizing: border-box;
+
+            &:nth-child(2n) {
+                background: #eef0fc;
+            }
+
+            .last-transaction-props {
+                min-width: 60%;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .last-transaction__name,
+            .last-transaction__coast,
+            .last-transaction__time {
+                position: relative;
+                padding-left: 20px;
+                display: inline-block;
+                margin-right:  10px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 12px;
+                    height: 12px;
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    margin-top: -6px;
+                }
+            }
+            .last-transaction__name::before {
+                background-image: url('/static/img/icons/person_small.png');
+            }
+            .last-transaction__coast::before {
+                background-image: url('/static/img/icons/dollar_small.png');
+            }
+            .last-transaction__time::before {
+                background-image: url('/static/img/icons/clock_small.png');
+            }
+
+            label {
+                opacity: .8;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 1;
+                }
+            }
+
+            .accept {
+                color: #42c3af;
+                font-weight: 700;
+                text-decoration: none;
+                position: relative;
+                padding-left: 16px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 12px;
+                    height:  10px;
+                    background: url('/static/img/icons/check_g.png') center no-repeat;
+                    margin-top: -6px;
+                }
+            }
+            .denial {
+                color: #ff4653;
+                font-weight: 700;
+                text-decoration: none;
+                position: relative;
+                padding-left:  16px;
+                margin-left:  10px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 12px;
+                    height:  10px;
+                    background: url('/static/img/icons/x_r.png') center no-repeat;
+                    margin-top: -6px;
+                }
+            }
+        }
+    }
+}

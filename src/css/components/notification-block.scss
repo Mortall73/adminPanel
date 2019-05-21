@@ -1,0 +1,111 @@
+.notification-block {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: -9px 0px 9px 0px rgba(231, 232, 236, 0.75);
+    transform: translateX(110%);
+    transition: transform .3s;
+    height: 100vh;
+
+
+
+    &.is-active {
+        transform: translateX(0);
+    }
+
+    .notification-block__title {
+        margin: 0;
+    }
+    .notification-block__head {
+        padding: 20px;
+        position: relative;
+        border-bottom: 2px solid #f5f6f6;
+
+        .notification-block__close {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            width: 15px;
+            height: 15px;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                top: 50%;
+                left: 0;
+                transform: rotate(45deg);
+                background: #ccc;
+                margin-top: -1px;
+            }
+             &::after {
+                 transform: rotate(-45deg);
+             }
+
+             &:hover {
+                 &::before, &::after {
+                     background: $red;
+                 }
+             }
+
+        }
+    }
+    .notification-block__body-wrap {
+        height: calc(100vh - 60px);
+        &[data-simplebar] {
+            .simplebar-track.simplebar-vertical {
+                right: auto;
+                width: 7px;
+                left: -3px;
+            }
+            .simplebar-scrollbar {
+                &::before {
+                    background: $blue !important;
+                }
+            }
+        }
+    }
+    .notification {
+        position: relative;
+        padding-top: 20px;
+        padding-left: 70px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f5f6f6;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #f5f6f6;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            background-color: $blue;
+            background-position: center;
+            background-size: auto;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            border-radius: 50%;
+        }
+        .notification__title {
+            margin: 0 0 10px 0;
+            font-size: 15px;
+            color: $main;
+        }
+        .notification__sub {
+            margin: 0;
+            color: #a6baed;
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+}

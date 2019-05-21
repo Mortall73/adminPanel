@@ -1,0 +1,35 @@
+.tabs {
+    .tabs__header {
+        display: flex;
+
+        .tab-button {
+            color: $gray;
+            font-size: 16px;
+            padding: 12px 30px;
+            display: inline-block;
+            box-sizing: border-box;
+            background-color: #fafafa;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-decoration: none;
+            margin-right: 1px;
+            line-height: 1;
+
+            &.is-active {
+                color: $main;
+                background-color: #fff;
+            }
+        }
+    }
+    .tabs-content {
+        padding: 30px;
+        background: #fff;
+        border-radius: 4px;
+        box-sizing: border-box;
+        box-shadow: 0px 9px 9px 0px rgba(231, 232, 236, 0.75);
+
+    }
+}

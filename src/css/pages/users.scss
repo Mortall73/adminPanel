@@ -1,0 +1,15 @@
+.settings-table {
+    .setting.user {
+        .col-3:hover,
+        .col-4:hover {
+            span {
+                position: static;
+                padding:0;
+                background: transparent;
+                border-radius: 0;
+                box-shadow: none;
+                color: #fff;
+            }
+        }
+    }
+}

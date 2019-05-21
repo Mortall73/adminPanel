@@ -1,0 +1,45 @@
+body {
+    font-family: 'Circe', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: $main;
+    background-color: #f5f6fa;
+}
+.global-page-content {
+    overflow: hidden;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+[hidden] {
+    display: none !important;
+}
+main {
+    margin-left: 330px;
+    max-width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+a.link {
+    color: $blue;
+    text-decoration: none;
+
+    &.link-decor {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.text-center {
+    text-align: center;
+}

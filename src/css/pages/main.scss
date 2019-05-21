@@ -1,0 +1,62 @@
+.main-row {
+    display: flex;
+    margin: 0 -16px 0 -16px;
+
+    .left {
+        width: calc((100%/3) * 2);
+        box-sizing: border-box;
+        margin: 0 16px 30px 16px;
+    }
+    .right {
+        width: calc(100%/3 );
+        box-sizing: border-box;
+        margin: 0 16px 30px 16px;
+    }
+}
+.main-chart {
+    padding: 24px 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 9px 9px 0px rgba(231, 232, 236, 0.75);
+
+    .main-chart__header {
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .form-block {
+            margin: 0;
+        }
+        select {
+            background: #eef0fc;
+            font-size: 10px;
+            color: $blue;
+            padding: 5px 20px;
+            font-weight: 700;
+        }
+    }
+
+    .main-chart__title {
+        font-size: 16px;
+        margin:  0;
+    }
+
+    .highcharts-credits {
+        display: none;
+    }
+}
+
+footer {
+    margin-left: 330px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px 20px 0;
+
+    .footer-copyright {
+        font-size: 10px;
+        color: #b6bac3;
+        margin: 0;
+    }
+}

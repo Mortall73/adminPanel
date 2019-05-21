@@ -1,0 +1,33 @@
+.table-wrap {
+    display: block;
+    max-width: 100%;
+
+    .simplebar-scrollbar:before {
+        background: $blue;
+    }
+
+    .table-inner {
+        display: block;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th {
+                font-size: 15px;
+                color: $gray;
+            }
+
+            tr {
+                border-bottom: 1px solid #f5f6f6;
+            }
+            th, td  {
+                padding: 5px 0;
+            }
+            td {
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.swal2-container.swal2-shown.modal-container {
+    background-color: rgba(0,0,0,.6);
+}
+.modal-container {
+    .modal {
+        padding: 30px 40px;
+        font-family: inherit;
+
+        .modal-content {
+            #swal2-content {
+                text-align: left;
+            }
+        }
+
+        .modal-title {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+
+        .swal2-close {
+            z-index: 2;
+        }
+        .modal__subtitle {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 35px 0;
+            text-align: left;
+        }
+        .modal-text {
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+    .modal.modal--transparent {
+        background: transparent;
+        padding: 0;
+
+        .modal-block {
+            padding: 20px;
+            background: #fff;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    }
+}
+.swal2-confirm.swal2-styled {
+    background: $green !important;
+}

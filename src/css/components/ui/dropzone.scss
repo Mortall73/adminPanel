@@ -1,0 +1,40 @@
+.dropzone  {
+    border-width: 1px;
+    border-color: transparentize($blue, .5);
+    border-style: dashed;
+    border-radius: 4px;
+    transition: all .3s ease;
+
+    &:hover, &.dz-started {
+        background: rgb(238, 240, 252);
+        border-color: $blue;
+    }
+
+    .dz-message {
+        font-weight: 500;
+        color: #000;
+    }
+
+    .dropzone__icon {
+        display: block;
+        margin: 0 auto 30px auto;
+        width: 20px;
+        height: 20px;
+        background: url('/static/img/icons/upload_img.png') center no-repeat;
+        background-size: contain;
+        pointer-events: none;
+    }
+
+    .dz-remove {
+        padding: 5px;
+        color: #fff;
+        background-color:  $red;
+        font-size: 14px;
+        text-decoration: none;
+        border-radius: 4px;
+        &:hover {
+            text-decoration: none !important;
+            background-color: darken($red, 4);
+        }
+    }
+}

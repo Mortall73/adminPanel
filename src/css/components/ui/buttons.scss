@@ -1,0 +1,271 @@
+.transaction-btn {
+    color: #eebbff;
+    display: inline-block;
+    padding: 14px 30px 14px 54px;
+    position: relative;
+    text-decoration: none;
+    background-color: $blue;
+    line-height: 1;
+    border-radius: 4px;
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: darken($blue, 3);
+    }
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        width: 20px;
+        height: 14px;
+        background: url("/static/img/icons/trending-up.png") center no-repeat;
+        margin-top: -7px;
+    }
+}
+
+.btn {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 10px;
+    transition: background-color .2s;
+    border: none;
+    outline: none;
+
+    &.btn--light {
+        background-color: $light;
+        color: $lightBlue;
+
+        &:hover {
+            background-color: darken($light, 2);
+        }
+    }
+}
+.btn.btn-m {
+    font-size:  15px;
+    font-weight: 400;
+    padding: 10px 24px;
+}
+.btn.btn-green {
+    background-color: $green;
+    color: #fff;
+    box-shadow: 0px 9px 9px 0px rgba(231, 232, 236, 0.75);
+
+    &:hover {
+        background-color: darken($green, 4.5);
+    }
+
+}
+.btn.btn-add {
+    position: relative;
+    padding: 12px 22px;
+    padding-left: 40px;
+    font-size: 15px;
+    font-weight: 400;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        width: 2px;
+        height: 10px;
+        background: #fff;
+        transform: rotate(90deg);
+        margin-top: -5px;
+        opacity: .7;
+    }
+    &::after {
+        transform: rotate(0deg);
+    }
+}
+
+.btn.btn-del {
+    border-width: 1px;
+    border-color: $red;
+    border-style: solid;
+    border-radius: 5px;
+    background: transparent;
+    color: $red;
+    font-size: 15px;
+    padding: 12px 22px 12px 36px;
+    position: relative;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $red;
+        color: #fff;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        width: 12px;
+        height: 12px;
+        background: url('/static/img/icons/del_icon.png') center no-repeat;
+        background-size: contain;
+        margin-top: -6px;
+    }
+}
+
+.btn.btn-warning {
+    font-weight: 400;
+    font-size: 14px;
+    background: $red;
+    display: inline-block;
+    padding: 8px 24px 8px 42px;
+    position: relative;
+    color: #fff;
+    border-radius: 4px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 14px;
+        height: 12px;
+        margin-top: -6px;
+        background: url('/static/img/icons/warn.png') center no-repeat;
+    }
+}
+.btn.btn-success {
+    font-weight: 400;
+    font-size: 14px;
+    background: #42c3af;
+    display: inline-block;
+    padding: 8px 24px 8px 42px;
+    position: relative;
+    color: #fff;
+    border-radius: 4px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 14px;
+        height: 12px;
+        margin-top: -6px;
+        background: url('/static/img/icons/success.png') center no-repeat;
+    }
+}
+.btn.btn-info {
+    font-weight: 400;
+    font-size: 14px;
+    background: $blue;
+    display: inline-block;
+    padding: 8px 24px 8px 42px;
+    position: relative;
+    color: #fff;
+    border-radius: 4px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 14px;
+        height: 12px;
+        margin-top: -6px;
+        background: url('/static/img/icons/info_i.png') center no-repeat;
+    }
+}
+
+.settings-trigger {
+    background: transparent;
+    border: none;
+    position: relative;
+    width: 40px;
+    height: 15px;
+    background: url('/static/img/icons/menu_icon.png') left center no-repeat;
+    background-size: auto;
+    font-size: 0;
+    padding: 0;
+    display: block;
+    outline: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: url('/static/img/icons/select_icon.png') center no-repeat;
+        background-size: auto;
+        right: 0;
+        top: 50%;
+        margin-top: -3px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.btn.btn-save {
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    padding: 12px 24px 12px 42px;
+    position: relative;
+    color: #fff;
+    border-radius: 4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 14px;
+        height: 12px;
+        margin-top: -6px;
+        background: url('/static/img/icons/check_white.png') center no-repeat;
+    }
+}
+.btn.btn-cancel {
+    background-color: #f6f7fb;
+    color: $main;
+    box-shadow: 0 9px 9px 0 rgba(231, 232, 236, 0.75);
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    padding: 12px 24px 12px 42px;
+    position: relative;
+    border-radius: 4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 14px;
+        height: 12px;
+        margin-top: -6px;
+        background: url('/static/img/icons/x.png') center no-repeat;
+        background-size: contain;
+    }
+
+    &:hover {
+        background-color: darken(#f6f7fb, 4.5);
+    }
+}
