@@ -17,6 +17,10 @@
             </div>
         </div>
         <div class="task-edit__page">
+            <div class="task-edit__actions-bar">
+                <a href="#" class="btn btn-info">Выбрать пользователей</a>
+                <button type="submit" class="btn btn-del revert">Удалить</button>
+            </div>
             <div class="row">
                 <div class="col col-8">
                     <div class="block-w">

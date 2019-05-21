@@ -1,5 +1,4 @@
 <?php include('./__head.php'); ?>
-<?php $page = 'index'; ?>
 <body>
 <div style="display:none;">
     <?php include('./svgs.php'); ?>

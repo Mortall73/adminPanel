@@ -31,3 +31,21 @@
         }
     }
 }
+
+.table {
+    .table__header {
+        font-size: 15px;
+        color: $gray;
+        margin-bottom: 20px;
+    }
+    .row {
+        padding: 10px;
+        align-items: center;
+    }
+    .row:nth-child(2n) {
+        background-color: #f6f7fb;
+        &.no-bg {
+            background-color: transparent;
+        }
+    }
+}

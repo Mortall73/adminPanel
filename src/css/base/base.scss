@@ -43,3 +43,49 @@ a.link {
 .text-center {
     text-align: center;
 }
+.text-right {
+    text-align: right;
+}
+.mar-bottom-0 {
+    margin-bottom: 0 !important;
+}
+a.change-link {
+    font-size: 15px;
+    color: $blue;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 11px;
+        height: 12px;
+        margin-top: -6px;
+        background: url('/static/img/icons/setting.png') center no-repeat;
+        background-size: contain;
+    }
+}
+a.delete-link {
+    font-size: 15px;
+    color: $red;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 11px;
+        height: 10px;
+        margin-top: -5px;
+        background: url('/static/img/icons/del_icon.png') center no-repeat;
+        background-size: contain;
+    }
+}

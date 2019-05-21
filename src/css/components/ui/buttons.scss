@@ -106,6 +106,12 @@
         cursor: pointer;
         background-color: $red;
         color: #fff;
+
+        &::before {
+            background: url('/static/img/icons/trash_w.png') center no-repeat;
+            background-size: contain;
+        }
+
     }
 
     &::before {
@@ -118,6 +124,24 @@
         background: url('/static/img/icons/del_icon.png') center no-repeat;
         background-size: contain;
         margin-top: -6px;
+    }
+
+    &.revert {
+        background-color: $red;
+        color: #fff;
+        &::before {
+            background: url('/static/img/icons/trash_w.png') center no-repeat;
+            background-size: contain;
+        }
+
+        &:hover {
+            background: transparent;
+            color: $red;
+
+            &::before {
+                background: url('/static/img/icons/del_icon.png') center no-repeat;
+            }
+        }
     }
 }
 

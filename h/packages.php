@@ -145,7 +145,7 @@
                                 </p>
                             </div>
                             <div class="col col-2 package__status">
-                                <span class="package__status-label warning">Not received </span>
+                                <span class="package__status-label warning">Not received </span> <?/*success - class*/?>
                             </div>
                             <div class="col col-1 package__cost">
                                 <span>$ 2 000</span>

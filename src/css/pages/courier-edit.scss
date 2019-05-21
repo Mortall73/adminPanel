@@ -1,0 +1,12 @@
+.setting__action {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('/static//img/icons/setting_icon.png') center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: 0 auto;
+}
+.change-link + .delete-link {
+    margin-left: 10px;
+}
