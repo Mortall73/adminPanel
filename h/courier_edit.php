@@ -31,6 +31,7 @@
                         <div class="table">
                             <div class="table__header">
                                 <span>Название</span>
+                                <a href="#" class="btn btn-green btn-add">Создать</a>
                             </div>
                             <div class="row">
                                 <div class="col col-9">
@@ -151,6 +152,7 @@
                     <div class="table">
                         <div class="table__header">
                             <span>Название</span>
+                            <a href="#" class="btn btn-green btn-add">Создать</a>
                         </div>
                         <?foreach(array(1,2,3,4,5) as $item2):?>
                             <div class="row">
