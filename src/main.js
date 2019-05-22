@@ -8,6 +8,7 @@ import './js/vendors/dropzone.min';
 import './js/vendors/dropzone.min.css';
 import 'simplebar';
 import 'simplebar/dist/simplebar.css';
+import axios from 'axios';
 /* end import global vendors */
 
 /*
@@ -37,7 +38,7 @@ import packageEdit from './js/page/package-edit';
 /*
 * init scripts
 */
-
+axios.defaults.headers.common['Authorization'] = window.appConfig.authorization || null;
 modulesLoader();
 validate();
 
