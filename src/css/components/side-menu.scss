@@ -93,6 +93,10 @@ header {
                     color: $main;
                     text-decoration: none;
                     position: relative;
+                    transition: color .2s;
+                    &:hover {
+                        color: $blue;
+                    }
                 }
             }
         }

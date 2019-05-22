@@ -11,7 +11,7 @@ export default (container) => {
             this.toggle();
         },
         toggle() {
-            $subParants.on('click', (e) => {
+            $subParants.find('[data-menu-trigger]').on('click', (e) => {
                 e.preventDefault();
                 let $subMenu = $subParants.find('[data-submenu]');
                 $subMenu.slideToggle(200);
