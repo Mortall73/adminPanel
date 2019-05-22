@@ -1,7 +1,8 @@
 import Linechart from '../components/linechart';
 import axios from 'axios';
 
-let chart = document.getElementById('myChart');
+let chart = document.getElementById('chart');
+let chartUrl = $(chart).data('url');
 let $chartForm = $('[data-graph-form]');
 let $graphSelect = $chartForm.find('select');
 let $transactionForm = $('[data-transaction-form]');
@@ -24,7 +25,7 @@ $graphSelect.on('change', (e) => {
 function loadCartData() {
     return axios({
         method: 'get',
-        url: '/ajax/getChart.php'
+        url: chartUrl
     });
 }
 

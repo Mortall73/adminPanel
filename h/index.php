@@ -100,7 +100,7 @@
                             </div>
                         </form>
                     </div>
-                    <div id="chart" style="height: 230px; width: 100%;">
+                    <div id="chart" data-url="/ajax/getChart.php" style="height: 230px; width: 100%;">
                     </div>
                 </div>
             </div>
