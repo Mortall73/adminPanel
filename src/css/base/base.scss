@@ -89,3 +89,28 @@ a.delete-link {
         background-size: contain;
     }
 }
+.img-left {
+    float: left;
+    clear: both;
+    padding: 0 20px 20px 0;
+}
+.img-right {
+    float: right;
+    clear: both;
+    padding: 0 0 20px 20px;
+}
+.clearfix {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+        height: 0;
+        width: 100%;
+        visibility: hidden;
+    }
+}
+p.paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+    text-indent: 10px;
+}
