@@ -33,14 +33,21 @@
 }
 
 .table {
+    .table__title {
+        display: flex;
+        justify-content: space-between;
+        color: $main;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
     .table__header {
         font-size: 15px;
         color: $gray;
         margin-bottom: 20px;
-        display: flex;
+        /*display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: wrap;*/
     }
     .row {
         padding: 10px;

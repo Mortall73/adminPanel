@@ -46,6 +46,17 @@ a.link {
 .text-right {
     text-align: right;
 }
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.center-img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+}
 .mar-bottom-0 {
     margin-bottom: 0 !important;
 }

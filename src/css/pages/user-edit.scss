@@ -1,0 +1,14 @@
+.user-edit__page {
+
+}
+
+.task-data.task-data--v2 {
+    .task-data__title span {
+        color: $main;
+        font-weight: 700;
+    }
+    .task-data__item .task-data__item-name {
+        color: $blue;
+        font-weight: 400;
+    }
+}
