@@ -18,7 +18,39 @@
         </div>
         <div class="task-edit__page">
             <div class="task-edit__actions-bar">
-                <a href="#" class="btn btn-info">Выбрать пользователей</a>
+                <a href="#" class="btn btn-info" data-dropdown="#dropdown-users">Выбрать пользователей</a>
+                <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor users__dropdown"
+                     id="dropdown-users">
+                    <form action="#"
+                          name="users_search_form"
+                          method="post"
+                          enctype="application/x-www-form-urlencoded"
+                    >
+                        <label class="search-block">
+                            <input type="text" name="q" value="" class="search-block__search">
+                            <button type="submit" class="search-block__submit"></button>
+                        </label>
+                        <div class="form-block">
+                            <label class="form-block__checkbox-wrap">
+                                <input class="form-block__checkbox"
+                                       type="checkbox" name="ACTIVITY_1" value="true">
+                                <span class="checkbox-custom"></span>
+                                <span class="form-block__checkbox-text">username 1</span>
+                            </label>
+                        </div>
+                        <div class="form-block">
+                            <label class="form-block__checkbox-wrap">
+                                <input class="form-block__checkbox"
+                                       type="checkbox" name="ACTIVITY_1" value="true">
+                                <span class="checkbox-custom"></span>
+                                <span class="form-block__checkbox-text">username 2</span>
+                            </label>
+                        </div>
+                        <div class="btn-wrap text-right">
+                            <button type="submit" class="btn btn-blue btn-m">Выбрать всех</button>
+                        </div>
+                    </form>
+                </div>
                 <button type="submit" class="btn btn-del revert">Удалить</button>
             </div>
             <div class="row">
@@ -177,8 +209,14 @@
                                </p>
                                <p class="task-data__item">
                                    <span class="task-data__item-name">Статус</span>
-                                   <span class="task-data__item-value">
-                                       новое
+                                   <span class="form-block">
+                                       <label class="form-block__select-wrap">
+                                           <select type="text" name="TASK_STATUS"  class="form-block__select">
+                                               <option value="4" selected>новое</option>
+                                               <option value="2">не новое</option>
+                                           </select>
+                                           <i class="form-block__select-icon"></i>
+                                       </label>
                                    </span>
                                </p>
                                <p class="task-data__item">

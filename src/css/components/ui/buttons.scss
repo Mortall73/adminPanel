@@ -293,3 +293,14 @@
         background-color: darken(#f6f7fb, 4.5);
     }
 }
+.btn.btn-blue {
+    background: $blue;
+    color: #fff;
+    transition: background .2s;
+
+    &:hover {
+        cursor: pointer;
+        background: darken($blue, 3);
+        color: #fff;
+    }
+}

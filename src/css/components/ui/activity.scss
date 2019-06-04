@@ -6,12 +6,57 @@
     margin-bottom:  30px;
 
     .last-activity__header {
-        padding:  0 0 24px 0;
+        margin:  0 0 24px 0;
+        position: relative;
     }
 
     .last-activity__title {
         font-size: 16px;
         margin:  0;
+    }
+    .last-activity__icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -10px;
+        display: block;
+        background: url('/static/img/icons/more-vertical.svg') center no-repeat;
+        opacity: .3;
+        transition: opacity .2s linear;
+        background-size: 20px;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    .last-activity__dropdown {
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 20px;
+        box-sizing: border-box;
+        width: 250px;
+        top: 100% !important;
+        right: 0 !important;
+        left: auto !important;
+        box-shadow: 0 3px 7px 2px rgba(231, 232, 236, 0.75);
+
+        .form-block .form-block__checkbox-wrap .form-block__checkbox-text {
+            font-size: 13px;
+        }
+
+        .form-block__checkbox:checked {
+            + .checkbox-custom + .form-block__checkbox-text {
+                color: $blue;
+            }
+        }
+    }
+
+    .last-activity__dropdown-title {
+        font-size: 14px;
+        margin-top: 0;
     }
 
     .last-activity__body {

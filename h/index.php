@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="main-row">
-            <div class="left">
+            <div class="top">
                 <div class="cards">
                     <div class="cards-row">
                         <div class="card">
@@ -53,8 +53,38 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card card--light">
+                            <div class="card__header">
+                                <p class="card__title">Кто на сайте</p>
+                                <i class="card__icon" style="background-image: url('/static/img/icons/online.png');"></i>
+                            </div>
+                            <div class="card__body">
+                                <ul class="card__list">
+                                    <li>
+                                        <a href="#">Екатерина Синегина</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Екатерина Синегина</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Екатерина Синегина</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Екатерина Синегина</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Екатерина Синегина</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Екатерина Синегина</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="left">
                 <div class="last-transactions" data-is="transactions">
                     <div class="last-transactions__header">
                         <p class="last-transactions__title">Последние транзакции</p>
@@ -105,42 +135,46 @@
                 </div>
             </div>
             <div class="right">
-                <div class="cards">
-                    <div class="cards-row">
-                        <div class="card card--light">
-                            <div class="card__header">
-                                <p class="card__title">Кто на сайте</p>
-                                <i class="card__icon" style="background-image: url('/static/img/icons/online.png');"></i>
-                            </div>
-                            <div class="card__body">
-                                <ul class="card__list">
-                                    <li>
-                                        <a href="#">Екатерина Синегина</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Екатерина Синегина</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Екатерина Синегина</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Екатерина Синегина</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Екатерина Синегина</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Екатерина Синегина</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="last-activity">
                     <div class="last-activity__header">
                         <p class="last-activity__title">Последняя активность</p>
-                        <a href="#" class="last-activity__icon"></a>
+                        <a href="#" class="last-activity__icon" data-dropdown="#dropdown-activity"></a>
+                        <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor last-activity__dropdown" id="dropdown-activity">
+                            <p class="last-activity__dropdown-title">Выберите пункты которые вы хотите видеть в этом блоке</p>
+                            <form action="#"
+                                  name="last_activity_form"
+                                  method="post"
+                                  enctype="application/x-www-form-urlencoded"
+                            >
+                                <div class="form-block">
+                                    <label class="form-block__checkbox-wrap">
+                                        <input class="form-block__checkbox"
+                                               type="checkbox" name="ACTIVITY_1" value="true">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="form-block__checkbox-text">{username} загрузил файлы для верефикации</span>
+                                    </label>
+                                </div>
+                                <div class="form-block">
+                                    <label class="form-block__checkbox-wrap">
+                                        <input class="form-block__checkbox"
+                                               type="checkbox" name="ACTIVITY_2" value="false">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="form-block__checkbox-text">{username} загрузил файлы для верефикации</span>
+                                    </label>
+                                </div>
+                                <div class="form-block">
+                                    <label class="form-block__checkbox-wrap">
+                                        <input class="form-block__checkbox"
+                                               type="checkbox" name="ACTIVITY_3" value="false">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="form-block__checkbox-text">{username} загрузил файлы для верефикации</span>
+                                    </label>
+                                </div>
+                                <div class="btn-wrap text-center">
+                                    <button type="submit" class="btn btn-blue btn-m">Сохранить</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="last-activity__body">
                         <a href="#" class="btn btn--light">Сегодня</a>

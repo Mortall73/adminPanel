@@ -1,11 +1,12 @@
 .cards {
     .cards-row  {
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
+        flex-wrap: wrap;
         margin: 0 -16px;
 
         .card {
-            width: calc(100%  - 32px);
+            width: calc(100%/3  - 32px);
             margin: 0 16px 30px 16px;
         }
     }

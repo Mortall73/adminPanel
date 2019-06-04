@@ -35,7 +35,7 @@
             align-items: center;
             justify-content: space-between;
             font-size: 12px;
-            padding: 12px 25px;
+            padding: 12px 10px;
             box-sizing: border-box;
 
             &:nth-child(2n) {
@@ -71,11 +71,26 @@
                     margin-top: -6px;
                 }
             }
+            .last-transaction__name,
+            .last-transaction__coast {
+                flex-shrink: 0;
+                width: 95px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
             .last-transaction__name::before {
                 background-image: url('/static/img/icons/person_small.png');
             }
             .last-transaction__coast::before {
                 background-image: url('/static/img/icons/dollar_small.png');
+            }
+            .last-transaction__time {
+                flex-shrink: 0;
+                width: 120px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             .last-transaction__time::before {
                 background-image: url('/static/img/icons/clock_small.png');

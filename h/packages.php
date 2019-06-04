@@ -23,7 +23,7 @@
         <div class="packages-toolbar">
             <form action="#" method="post" data-packages-action  name="packages_actions" enctype="multipart/form-data"  class="actions">
                 <label class="actions-btn add" data-submit>
-                    <input style="display: none;" type="radio" name="PACKAGES_ACTION" value="seccess">
+                    <input style="display: none;" type="radio" name="PACKAGES_ACTION" value="success">
                     Одобрить
                 </label>
                 <label class="actions-btn archive" data-submit>

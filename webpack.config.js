@@ -17,7 +17,7 @@ module.exports = (env, argv) => ({
         path: path.resolve(__dirname + '/dist'),
         filename: '[name].js'
     },
-    watch: true,
+    watch: argv.mode !== 'production',
     module: {
         rules: [
             {

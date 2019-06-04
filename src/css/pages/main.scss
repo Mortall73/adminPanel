@@ -1,14 +1,24 @@
 .main-row {
     display: flex;
     margin: 0 -16px 0 -16px;
+    flex-wrap: wrap;
+
+    .top {
+        width: 100%;
+        flex-basis: 100%;
+
+        .cards-row {
+            margin: 0;
+        }
+    }
 
     .left {
-        width: calc((100%/3) * 2);
+        width: calc(66.55% - 32px);
         box-sizing: border-box;
         margin: 0 16px 30px 16px;
     }
     .right {
-        width: calc(100%/3 );
+        width: calc(33.45% - 32px);
         box-sizing: border-box;
         margin: 0 16px 30px 16px;
     }
