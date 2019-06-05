@@ -21,33 +21,21 @@
                 <a href="#" class="btn btn-info" data-dropdown="#dropdown-users">Выбрать пользователей</a>
                 <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor users__dropdown"
                      id="dropdown-users">
-                    <form action="#"
+                    <form action="/ajax/ajaxResponse/usersSearch.php"
                           name="users_search_form"
                           method="post"
                           enctype="application/x-www-form-urlencoded"
+                          data-is="users-search"
                     >
                         <label class="search-block">
-                            <input type="text" name="q" value="" class="search-block__search">
+                            <input type="text" name="q" value="" class="search-block__search" autocomplete="off" data-search-input>
                             <button type="submit" class="search-block__submit"></button>
                         </label>
-                        <div class="form-block">
-                            <label class="form-block__checkbox-wrap">
-                                <input class="form-block__checkbox"
-                                       type="checkbox" name="ACTIVITY_1" value="true">
-                                <span class="checkbox-custom"></span>
-                                <span class="form-block__checkbox-text">username 1</span>
-                            </label>
-                        </div>
-                        <div class="form-block">
-                            <label class="form-block__checkbox-wrap">
-                                <input class="form-block__checkbox"
-                                       type="checkbox" name="ACTIVITY_1" value="true">
-                                <span class="checkbox-custom"></span>
-                                <span class="form-block__checkbox-text">username 2</span>
-                            </label>
+                        <div class="users-list" data-users-container>
+                            <p class="users-list__preload" style="display: none;" data-preload>Загрузка...</p>
                         </div>
                         <div class="btn-wrap text-right">
-                            <button type="submit" class="btn btn-blue btn-m">Выбрать всех</button>
+                            <button type="submit" class="btn btn-blue btn-m" data-check-all>Выбрать всех</button>
                         </div>
                     </form>
                 </div>

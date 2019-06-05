@@ -29,7 +29,7 @@
                 <div class="tab__body" data-tab-content="tab-1">
                     <form action="#" name="COURIER_DOCS" method="post">
                         <div class="table">
-                            <div class="table__header">
+                            <div class="table__header space-between">
                                 <span>Название</span>
                                 <a href="#" class="btn btn-green btn-add">Создать</a>
                             </div>
@@ -150,7 +150,7 @@
 
                 <div class="tab__body" data-tab-content="tab-4" style="display:none;">
                     <div class="table">
-                        <div class="table__header">
+                        <div class="table__header space-between">
                             <span>Название</span>
                             <a href="#" class="btn btn-green btn-add">Создать</a>
                         </div>
@@ -169,14 +169,17 @@
                 </div>
 
                 <div class="tab__body" data-tab-content="tab-5" style="display:none;">
-                    <form action="#" name="COURIER_STATUS" method="post">
+                    <form action="#" name="COURIER_STATUS" method="post" data-validate>
                         <div class="table">
-                            <div class="row no-bg">
+                            <div class="row no-bg row--align-start">
                                 <div class="col col-3">
                                     <div class="form-block">
                                         <p class="form-block__title">New</p>
                                         <label class="form-block__input-wrap">
-                                            <input class="form-block__input" type="text" name="COURIER_STATUS_NEW" placeholder="Введите текст" value="New">
+                                            <input class="form-block__input" type="text" name="COURIER_STATUS_NEW" placeholder="Введите текст" value="New"
+                                                   required
+                                                   data-pristine-not-empty
+                                                   data-pristine-required-message="Поле обязательно для заполнения">
                                         </label>
                                     </div>
                                 </div>
@@ -184,7 +187,10 @@
                                     <div class="form-block">
                                         <p class="form-block__title">Ready</p>
                                         <label class="form-block__input-wrap">
-                                            <input class="form-block__input" type="text" name="COURIER_STATUS_READY" placeholder="Введите текст" value="Ready">
+                                            <input class="form-block__input" type="text" name="COURIER_STATUS_READY" placeholder="Введите текст" value="Ready"
+                                                   required
+                                                   data-pristine-not-empty
+                                                   data-pristine-required-message="Поле обязательно для заполнения">
                                         </label>
                                     </div>
                                 </div>
@@ -192,7 +198,10 @@
                                     <div class="form-block">
                                         <p class="form-block__title">Going to die </p>
                                         <label class="form-block__input-wrap">
-                                            <input class="form-block__input" type="text" name="COURIER_STATUS_TO_DIE" placeholder="Введите текст" value="Going to die ">
+                                            <input class="form-block__input" type="text" name="COURIER_STATUS_TO_DIE" placeholder="Введите текст" value="Going to die "
+                                                   required
+                                                   data-pristine-not-empty
+                                                   data-pristine-required-message="Поле обязательно для заполнения">
                                         </label>
                                     </div>
                                 </div>
@@ -200,7 +209,10 @@
                                     <div class="form-block">
                                         <p class="form-block__title">Suspicious</p>
                                         <label class="form-block__input-wrap">
-                                            <input class="form-block__input" type="text" name="COURIER_STATUS_SUSPIC" placeholder="Введите текст" value="Suspicious">
+                                            <input class="form-block__input" type="text" name="COURIER_STATUS_SUSPIC" placeholder="Введите текст" value="Suspicious"
+                                                   required
+                                                   data-pristine-not-empty
+                                                   data-pristine-required-message="Поле обязательно для заполнения">
                                         </label>
                                     </div>
                                 </div>
@@ -208,7 +220,10 @@
                                     <div class="form-block">
                                         <p class="form-block__title">Die</p>
                                         <label class="form-block__input-wrap">
-                                            <input class="form-block__input" type="text" name="COURIER_STATUS_DIE" placeholder="Введите текст" value="Die">
+                                            <input class="form-block__input" type="text" name="COURIER_STATUS_DIE" placeholder="Введите текст" value="Die"
+                                                   required
+                                                   data-pristine-not-empty
+                                                   data-pristine-required-message="Поле обязательно для заполнения">
                                         </label>
                                     </div>
                                 </div>

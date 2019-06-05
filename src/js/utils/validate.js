@@ -5,6 +5,13 @@ Pristine.addValidator("not-empty", function(value, param1, param2) {
 
 }, "Поле не должно быть пустым", 5, false);
 
+Pristine.addValidator("select-required", function(value, param1, param2) {
+    // here `this` refers to the respective input element
+    
+    return value != -1;
+
+}, "Поле должно быть выбранно", 5, false);
+
 export default (onceForm) => {
     let $formValidate = $('[data-validate]');
     let defaultConfig = {

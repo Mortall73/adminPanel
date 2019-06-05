@@ -48,10 +48,21 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;*/
+
+        &.space-between {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     }
     .row {
         padding: 10px;
         align-items: center;
+
+        &.row--align-start {
+            align-items: flex-start;
+        }
     }
     .row:nth-child(2n) {
         background-color: #f6f7fb;

@@ -1,5 +1,14 @@
 .user-edit__page {
-
+    .user-edit-unlock {
+        margin-bottom: 5px;
+        text-align: right;
+        .form-block__checkbox-wrap .checkbox-custom {
+            border: 1px solid $green;
+        }
+        .form-block__checkbox-wrap .form-block__checkbox-text {
+            color: $green;
+        }
+    }
 }
 
 .task-data.task-data--v2 {
@@ -10,5 +19,13 @@
     .task-data__item .task-data__item-name {
         color: $blue;
         font-weight: 400;
+    }
+}
+
+.user-edit__actions-bar {
+    padding: 20px 0;
+    .btn {
+        display: inline-block;
+        margin: 0 4px 4px 4px;
     }
 }

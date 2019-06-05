@@ -17,8 +17,39 @@
             </div>
         </div>
         <div class="user-edit__page">
-            <div class="user-edit__actions-bar">
-
+            <div class="user-edit__actions-bar text-right">
+                <a href="#" class="btn btn-m btn-blue btn-blue--revert btn--icon">
+                    <i class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="#user_icon"></use>
+                        </svg>
+                    </i>
+                    Персональные данные
+                </a>
+                <a href="#" class="btn  btn-m btn-blue btn--icon">
+                    <i class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="#dollar_icon"></use>
+                        </svg>
+                    </i>
+                    Платежные данные
+                </a>
+                <a href="#" class="btn  btn-m btn-green btn--icon">
+                    <i class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="#package_icon"></use>
+                        </svg>
+                    </i>
+                    Дополнительно
+                </a>
+                <a href="#" class="btn  btn-m btn-yellow btn--icon">
+                    <i class="icon">
+                        <svg width="24" height="24">
+                            <use xlink:href="#package_icon"></use>
+                        </svg>
+                    </i>
+                    Дополнительно
+                </a>
             </div>
             <div class="row">
                 <div class="col col-8">
@@ -225,6 +256,14 @@
                 <div class="col col-4">
                     <div class="block-w">
                         <form action="#" name="USER_DATA" class="task-data-form" method="post">
+                            <div class="form-block user-edit-unlock">
+                                <label class="form-block__checkbox-wrap">
+                                    <input class="form-block__checkbox"
+                                           type="checkbox" name="USER_UNLOCK" value="true">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="form-block__checkbox-text">Разблокировать</span>
+                                </label>
+                            </div>
                             <div class="task-data task-data--v2">
                                 <p class="task-data__title">
                                     <span>Мета</span>

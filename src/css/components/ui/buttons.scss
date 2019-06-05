@@ -192,7 +192,7 @@
     font-size: 14px;
     background: $blue;
     display: inline-block;
-    padding: 8px 24px 8px 42px;
+    padding: 10px 24px 10px 42px;
     position: relative;
     color: #fff;
     border-radius: 4px;
@@ -207,6 +207,7 @@
         margin-top: -6px;
         background: url('/static/img/icons/info_i.png') center no-repeat;
     }
+
 }
 
 .settings-trigger {
@@ -296,11 +297,57 @@
 .btn.btn-blue {
     background: $blue;
     color: #fff;
+    transition: background .2s, color .2s;
+
+    &:hover {
+        cursor: pointer;
+        background: darken($blue, 6);
+        color: #fff;
+    }
+
+    &.btn-blue--revert {
+        background: transparent;
+        color: $blue;
+        box-shadow: 0 0 0 1px $blue;
+
+        &:hover {
+            background: $blue;
+            color: #fff;
+        }
+    }
+}
+.btn.btn-yellow {
+    background: $yellow;
+    color: #fff;
     transition: background .2s;
 
     &:hover {
         cursor: pointer;
-        background: darken($blue, 3);
+        background: darken($yellow, 6);
         color: #fff;
+    }
+}
+
+.btn.btn--icon {
+    padding-left: 42px;
+    position: relative;
+
+    .icon {
+        position: absolute;
+        left: 13px;
+        width: 13px;
+        height: 13px;
+        top: 50%;
+        margin-top: -7px;
+        overflow: hidden;
+
+        img, svg {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            margin: 0 auto;
+        }
     }
 }

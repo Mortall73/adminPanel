@@ -16,6 +16,16 @@
                 </div>
             </div>
         </div>
+        <div class="users-actions-bar packages-toolbar">
+            <div class="search-block" data-is="packages-search">
+                <a href="#" class="search-block__open" data-open-search=""></a>
+                <form action="#" method="get" name="users_search" enctype="multipart/form-data" class="search-block-inner" data-search-block>
+                    <input type="text" name="q" value="" class="search-block__search">
+                    <button type="submit" class="search-block__submit"></button>
+                </form>
+            </div>
+            <a href="#" class="btn btn-green btn-add">Создать</a>
+        </div>
         <div class="settings-table">
             <div class="settings-table__head">
                 <div class="settings-table__head-col col-3">
@@ -44,6 +54,14 @@
                     </div>
                     <div class="setting__item col-3">
                         <a href="#" class="setting__action"></a>
+                        <a href="#" class="setting__action user-docs">
+                            <i class="icon">
+                                <svg>
+                                    <use xlink:href="#user_icon"></use>
+                                </svg>
+                            </i>
+                            Досье
+                        </a>
                     </div>
                 </div>
             <?endforeach;?>

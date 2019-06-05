@@ -1,4 +1,5 @@
 import axios from 'axios';
+import validate from '../utils/validate';
 export default (form) => {
     let $form = $(form);
     let url = $form.attr('action');
@@ -51,9 +52,17 @@ export default (form) => {
 
     $form.on('submit', (e) => {
         e.preventDefault();
-        setTimeout(() => {
-            methods.send();
-        }, 200);
+        let isValid = true;
+
+        if (form.hasAttribute('data-validate')) {
+            isValid = validate($form[0]);
+        }
+
+        if (isValid) {
+            setTimeout(() => {
+                methods.send();
+            }, 200);
+        }
     });
 
     $customSubmitButtons.on('click', (e) => {

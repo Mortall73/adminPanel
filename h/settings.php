@@ -49,7 +49,7 @@
                             <span>NPU8FxYStrXPFdg5H4rmFbZnMvYadYPznzZZH9exb2K7k</span>
                         </div>
                         <div class="setting__item col-5">
-                            <a href="#" class="setting__action"></a>
+                            <a href="#" class="setting__action" data-is="ajax-modal" data-url="/ajax/getSettingEdit.php"></a>
                         </div>
                     </div>
                 <?endforeach;?>

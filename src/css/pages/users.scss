@@ -11,5 +11,52 @@
                 color: #fff;
             }
         }
+
+        .setting__action {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+            height: 15px;
+            &.user-docs {
+                width: auto;
+                height: auto;
+                background: transparent;
+                position: relative;
+                padding-left: 25px;
+                color: #ccc;
+                text-decoration: none;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                .icon {
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -9px;
+
+                    svg {
+                        display: block;
+                        margin: 0 auto;
+                        width: auto;
+                        height: auto;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.users-actions-bar {
+    justify-content: flex-end;
+    padding: 20px 0;
+
+    .search-block .search-block__search {
+        padding-right: 10px;
     }
 }

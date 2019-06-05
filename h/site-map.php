@@ -102,6 +102,13 @@
                             </span>
                         </a>
                     </li>
+                    <li class="main-menu__item">
+                        <a href="/h/user_edit.php" class="main-menu__link" data-sitemap-link>
+                            <span class="main-menu__link-text">
+                               Редактирование пользователя
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>

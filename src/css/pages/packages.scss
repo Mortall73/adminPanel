@@ -339,11 +339,13 @@
     .package-labels {
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
         border-top-left-radius: 10px;
         overflow: hidden;
         position: relative;
         right: -6px;
         bottom: -11px;
+
     }
     .package-label {
         display: block;
@@ -352,7 +354,10 @@
         background-color: #eef0fc;
         padding: 16px 16px 16px 32px;
         margin-right: 1px;
+        margin-bottom: 1px;
         position: relative;
+        transition: all .2s ease-in;
+        min-width: 100px;
 
         .icon {
             position: absolute;
@@ -364,6 +369,17 @@
             background-size: contain;
             background-repeat: no-repeat;
             margin-top: -5px;
+        }
+
+        &--btn {
+            text-decoration: none;
+            background-color: #526cfe;
+            color: #fff;
+
+            &:hover {
+                background-color: lighten(#526cfe, 6);
+                color: #fff;
+            }
         }
     }
 }

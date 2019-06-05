@@ -165,6 +165,9 @@
                         </div>
                         <div class="row package-labels-row">
                             <div class="package-labels">
+                                <a href="/h/package_edit.php"  class="package-label package-label--btn">
+                                    <span>Пересоздать лейбл 2</span>
+                                </a>
                                 <div class="package-label">
                                     <i class="icon" style="background-image: url('/static/img/icons/warn_red.png');"></i>
                                     <span>Пересоздать лейбл</span>

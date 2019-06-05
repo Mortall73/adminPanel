@@ -57,6 +57,17 @@
                 font-size: 14px;
                 border: none;
                 color: green;
+                transition: background-color .2s;
+
+                option {
+                    background-color: #fff;
+                    color: $main;
+                }
+                
+                &:hover {
+                    cursor: pointer;
+                    background-color: #f6f7fb;
+                }
             }
         }
     }
@@ -106,7 +117,7 @@
 
     .search-block {
         position: relative;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         display: block;
 
         .search-block__search {
@@ -122,7 +133,6 @@
             padding-right: 65px;
         }
         .search-block__submit {
-            background: none;
             border: none;
             position: absolute;
             width: 20px;
@@ -138,5 +148,62 @@
             -webkit-border-radius: 4px;
             border-radius: 4px;
         }
+    }
+    .users-section {
+        .form-block {
+            padding-left: 10px;
+        }
+        .users-section__title {
+            position: relative;
+            margin-top: 0;
+            
+            &:hover {
+                cursor: pointer;
+            }
+            
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -5px;
+                width: 14px;
+                height: 10px;
+                background: url('/static/img/icons/chevron-down.png') center no-repeat;
+                background-size: contain;
+                transform: rotate(180deg);
+                transition: all .2s;
+            }
+        }
+        &.is-active {
+            .users-section__title {
+
+                &::after {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+    .users-list {
+        position: relative;
+
+        .form-block__checkbox:checked + .checkbox-custom + .form-block__checkbox-text {
+            color: $green;
+        }
+        
+        &.loading {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(255, 255, 255, 0.76);
+                z-index: 1;
+            }
+        }
+
+
     }
 }
