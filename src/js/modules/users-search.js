@@ -54,7 +54,7 @@ export default (module) => {
             url: url,
             data: value
         }).then((response) => {
-            console.log(response.data);
+
             if(response.data.success) {
                 if (value.get('action') == 'init') {
                     initData = response.data;
@@ -62,7 +62,7 @@ export default (module) => {
 
                 } else if (value.get('q').length === 0) {
                     renderUsers(initData);
-                    console.log(initData);
+                    
                 } else {
                     renderUsers(response.data);
                 }
