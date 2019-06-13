@@ -42,12 +42,12 @@
                 <button type="submit" class="btn btn-del revert">Удалить</button>
             </div>
             <div class="row">
-                <div class="col col-8">
+                <div class="col col-12 col-md-8">
                     <div class="block-w">
                         <form action="#" name="TASK_FORM" method="post" class="default-form">
                             <p class="default-form__title">Задача</p>
                             <div class="row">
-                                <div class="col col-6">
+                                <div class="col col-12 col-md-6">
                                     <div class="form-block">
                                         <p class="form-block__title">Оператор</p>
                                         <label class="form-block__input-wrap">
@@ -68,12 +68,12 @@
                                                    value="Apple iPhone XS Max 64 ГБ золотой ">
                                         </label>
                                     </div>
-                                    <div class="default-form__buttons">
+                                    <div class="default-form__buttons mobile--hidden">
                                         <button type="submit" class="btn btn-green btn-save">Сохранить</button>
                                         <button type="submit" class="btn btn-cancel">Отменить</button>
                                     </div>
                                 </div>
-                                <div class="col col-6">
+                                <div class="col col-12 col-md-6">
                                     <div class="form-block">
                                         <p class="form-block__title">Курьер</p>
                                         <label class="form-block__input-wrap">
@@ -95,6 +95,10 @@
                                         </label>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="default-form__buttons mobile--visible">
+                                <button type="submit" class="btn btn-green btn-save">Сохранить</button>
+                                <button type="submit" class="btn btn-cancel">Отменить</button>
                             </div>
                         </form>
                     </div>
@@ -154,7 +158,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col col-4">
+                <div class="col col-12 col-md-4">
                    <div class="block-w">
                        <form action="#" name="TASK_DATA" class="task-data-form" method="post">
                            <div class="task-data">

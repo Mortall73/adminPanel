@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 [hidden] {
     display: none !important;
@@ -30,6 +31,7 @@ main {
     @media screen and (max-width: $desctop) {
         margin-left: 0;
         padding: 0 10px;
+        padding-top: 70px;
     }
 }
 
@@ -134,4 +136,18 @@ p.paragraph {
     font-size: 14px;
     line-height: 1.5;
     text-indent: 10px;
+}
+.mobile--visible {
+    display: none;
+}
+@media screen and (max-width: $mobile) {
+    .mobile-mb-20 {
+        margin-bottom: 20px;
+    }
+    .mobile--visible {
+        display: block;
+    }
+    .mobile--hidden {
+        display: none !important;
+    }
 }

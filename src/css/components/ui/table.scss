@@ -9,7 +9,7 @@
     .table-inner {
         display: block;
 
-        table {
+        table, .table {
             width: 100%;
             border-collapse: collapse;
 
@@ -30,6 +30,11 @@
             }
         }
     }
+    
+    @media screen and (max-width: $mobile) {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
 }
 
 .table {
@@ -44,10 +49,6 @@
         font-size: 15px;
         color: $gray;
         margin-bottom: 20px;
-        /*display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;*/
 
         &.space-between {
             display: flex;
@@ -69,5 +70,65 @@
         &.no-bg {
             background-color: transparent;
         }
+    }
+    @media screen and (max-width: $mobile) {
+        &:not(.table--no-mobile) {
+            display: table;
+            width: 100%;
+
+            .table__title {
+                display: table-row;
+
+                > * {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+
+                span {
+                    width: 50%;
+                }
+            }
+
+            .table__header {
+                display: table-header-group;
+
+                &.space-between {
+                    display: table-header-group;
+
+                    > * {
+                        display: table-cell;
+                    }
+                }
+
+                .row {
+                    flex-wrap: nowrap;
+                    display: table-row;
+
+                    .col {
+                        width: auto;
+                        flex-shrink: 0;
+                        max-width: none;
+                        display: table-cell;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+            .row {
+                flex-wrap: nowrap;
+                display: table-row;
+                width: 100%;
+
+                .col {
+                    width: auto;
+                    flex-shrink: 0;
+                    max-width: none;
+                    display: table-cell;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+
     }
 }

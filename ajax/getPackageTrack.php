@@ -2,7 +2,7 @@
 ob_start();
 ?>
 <div class="row" data-is="package-edit-row">
-    <div class="col col-5">
+    <div class="col col-12 col-md-5">
         <div class="form-block">
             <label class="form-block__select-wrap has-icon">
                 <i class="icon" style="background-image: url('/static/img/icons/car_icon.png')"></i>
@@ -15,7 +15,7 @@ ob_start();
             </label>
         </div>
     </div>
-    <div class="col col-5">
+    <div class="col col-12 col-md-5">
         <div class="form-block">
             <label class="form-block__input-wrap has-icon">
                 <i class="icon" style="background-image: url('/static/img/icons/hash_icon.png')"></i>
@@ -23,7 +23,7 @@ ob_start();
             </label>
         </div>
     </div>
-    <div class="col col-2">
+    <div class="col col-12 col-md-2 mobile-mb-20">
         <button type="button" class="btn btn-del" data-delete="/ajax/deletePackageEditRow.php?PACKAGE_ID=123">Удалить</button>
     </div>
 </div>

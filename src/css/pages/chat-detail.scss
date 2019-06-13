@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    @media screen and (max-width: $mobile) {
+        padding: 10px;
+    }
 }
 .chat-actions {
     display: flex;
@@ -159,6 +163,16 @@
             }
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        .chat-message__header {
+            margin-bottom: 10px;
+        }
+        .chat-message__text,
+        .chat-message__files {
+            margin-left: 0;
+        }
+    }
 }
 
 .chat-actions {
@@ -200,6 +214,18 @@
         padding: 0;
         &:hover {
             cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        flex-wrap: wrap;
+
+        .form-block {
+            margin-top: 10px;
+            .form-block__input {
+                height: 100px;
+                padding: 10px;
+            }
         }
     }
 }

@@ -28,33 +28,37 @@
             <div class="tabs-content">
                 <div class="tab__body" data-tab-content="tab-1">
                     <form action="#" name="COURIER_DOCS" method="post">
-                        <div class="table">
-                            <div class="table__header space-between">
-                                <span>Название</span>
-                                <a href="#" class="btn btn-green btn-add">Создать</a>
-                            </div>
-                            <div class="row">
-                                <div class="col col-9">
-                                    <span>Driver Licence</span>
-                                </div>
-                                <div class="col col-3 text-right">
-                                    <button class="btn btn-del" type="submit">Удалить</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-9">
-                                    <span>Driver Licence</span>
-                                </div>
-                                <div class="col col-3 text-right">
-                                    <button class="btn btn-del" type="submit">Удалить</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-9">
-                                    <span>Driver Licence</span>
-                                </div>
-                                <div class="col col-3 text-right">
-                                    <button class="btn btn-del" type="submit">Удалить</button>
+                        <div class="table-wrap">
+                            <div class="table-inner">
+                                <div class="table">
+                                    <div class="table__header space-between">
+                                        <span>Название</span>
+                                        <a href="#" class="btn btn-green btn-add">Создать</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-md-9">
+                                            <span>Driver Licence</span>
+                                        </div>
+                                        <div class="col col-md-3 text-right">
+                                            <button class="btn btn-del" type="submit">Удалить</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-md-9">
+                                            <span>Driver Licence</span>
+                                        </div>
+                                        <div class="col col-md-3 text-right">
+                                            <button class="btn btn-del" type="submit">Удалить</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-md-9">
+                                            <span>Driver Licence</span>
+                                        </div>
+                                        <div class="col col-md-3 text-right">
+                                            <button class="btn btn-del" type="submit">Удалить</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -62,40 +66,44 @@
                 </div>
                 <div class="tab__body" data-tab-content="tab-2" style="display:none;">
                     <form action="#" name="BILLING_OPERATIONS" method="post">
-                        <div class="table">
-                            <div class="table__header">
-                                <span>Название</span>
-                            </div>
-                            <div class="row">
-                                <div class="col col-12">
-                                    <div class="form-block mar-bottom-0">
-                                        <label class="form-block__checkbox-wrap">
-                                            <input class="form-block__checkbox" type="checkbox" name="BILLING_OPERATION_1" value="true">
-                                            <span class="checkbox-custom"></span>
-                                            <span class="form-block__checkbox-text">Driver Licence  </span>
-                                        </label>
+                        <div class="table-wrap">
+                            <div class="table-inner">
+                                <div class="table">
+                                    <div class="table__header">
+                                        <span>Название</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-12">
-                                    <div class="form-block mar-bottom-0">
-                                        <label class="form-block__checkbox-wrap">
-                                            <input class="form-block__checkbox" type="checkbox" name="BILLING_OPERATION_2" value="true">
-                                            <span class="checkbox-custom"></span>
-                                            <span class="form-block__checkbox-text">Driver Licence  </span>
-                                        </label>
+                                    <div class="row">
+                                        <div class="col col-12">
+                                            <div class="form-block mar-bottom-0">
+                                                <label class="form-block__checkbox-wrap">
+                                                    <input class="form-block__checkbox" type="checkbox" name="BILLING_OPERATION_1" value="true">
+                                                    <span class="checkbox-custom"></span>
+                                                    <span class="form-block__checkbox-text">Driver Licence  </span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-12">
-                                    <div class="form-block mar-bottom-0">
-                                        <label class="form-block__checkbox-wrap">
-                                            <input class="form-block__checkbox" type="checkbox" name="BILLING_OPERATION_3" value="true">
-                                            <span class="checkbox-custom"></span>
-                                            <span class="form-block__checkbox-text">Driver Licence  </span>
-                                        </label>
+                                    <div class="row">
+                                        <div class="col col-12">
+                                            <div class="form-block mar-bottom-0">
+                                                <label class="form-block__checkbox-wrap">
+                                                    <input class="form-block__checkbox" type="checkbox" name="BILLING_OPERATION_2" value="true">
+                                                    <span class="checkbox-custom"></span>
+                                                    <span class="form-block__checkbox-text">Driver Licence  </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-12">
+                                            <div class="form-block mar-bottom-0">
+                                                <label class="form-block__checkbox-wrap">
+                                                    <input class="form-block__checkbox" type="checkbox" name="BILLING_OPERATION_3" value="true">
+                                                    <span class="checkbox-custom"></span>
+                                                    <span class="form-block__checkbox-text">Driver Licence  </span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -106,73 +114,81 @@
                     </form>
                 </div>
                 <div class="tab__body" data-tab-content="tab-3" style="display:none;">
-                    <div class="table">
-                        <div class="table__header">
-                            <div class="row">
-                                <div class="col col-1">
-                                    <span>ID</span>
+                    <div class="table-wrap">
+                        <div class="table-inner">
+                            <div class="table">
+                                <div class="table__header">
+                                    <div class="row">
+                                        <div class="col col-1">
+                                            <span>ID</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span>Группа</span>
+                                        </div>
+                                        <div class="col col-5">
+                                            <span>Тип </span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span>Значение</span>
+                                        </div>
+                                        <div class="col col-2 text-center">
+                                            <span>Действие</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col col-2">
-                                    <span>Группа</span>
-                                </div>
-                                <div class="col col-5">
-                                    <span>Тип </span>
-                                </div>
-                                <div class="col col-2">
-                                    <span>Значение</span>
-                                </div>
-                                <div class="col col-2 text-center">
-                                    <span>Действие</span>
-                                </div>
+                                <?foreach(array(1,2,3,4,5) as $item):?>
+                                    <div class="row">
+                                        <div class="col col-1">
+                                            <span>6</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span>20</span>
+                                        </div>
+                                        <div class="col col-5">
+                                            <span>Вознаграждение курьера за отправку посылки</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span>15</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <a href="#" class="setting__action"></a>
+                                        </div>
+                                    </div>
+                                <?endforeach;?>
                             </div>
                         </div>
-                        <?foreach(array(1,2,3,4,5) as $item):?>
-                            <div class="row">
-                                <div class="col col-1">
-                                    <span>6</span>
-                                </div>
-                                <div class="col col-2">
-                                    <span>20</span>
-                                </div>
-                                <div class="col col-5">
-                                    <span>Вознаграждение курьера за отправку посылки</span>
-                                </div>
-                                <div class="col col-2">
-                                    <span>15</span>
-                                </div>
-                                <div class="col col-2">
-                                    <a href="#" class="setting__action"></a>
-                                </div>
-                            </div>
-                        <?endforeach;?>
                     </div>
                 </div>
 
                 <div class="tab__body" data-tab-content="tab-4" style="display:none;">
-                    <div class="table">
-                        <div class="table__header space-between">
-                            <span>Название</span>
-                            <a href="#" class="btn btn-green btn-add">Создать</a>
-                        </div>
-                        <?foreach(array(1,2,3,4,5) as $item2):?>
-                            <div class="row">
-                                <div class="col col-8">
-                                    <span>PayPal</span>
+                    <div class="table-wrap">
+                        <div class="table-inner">
+                            <div class="table">
+                                <div class="table__header space-between">
+                                    <span>Название</span>
+                                    <a href="#" class="btn btn-green btn-add">Создать</a>
                                 </div>
-                                <div class="col col-4 text-right">
-                                    <a href="#" class="change-link">Изменить</a>
-                                    <a href="#" class="delete-link">Удалить</a>
-                                </div>
+                                <?foreach(array(1,2,3,4,5) as $item2):?>
+                                    <div class="row">
+                                        <div class="col col-8">
+                                            <span>PayPal</span>
+                                        </div>
+                                        <div class="col col-4 text-right">
+                                            <a href="#" class="change-link">Изменить</a>
+                                            <a href="#" class="delete-link">Удалить</a>
+                                        </div>
+                                    </div>
+                                <?endforeach;?>
                             </div>
-                        <?endforeach;?>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tab__body" data-tab-content="tab-5" style="display:none;">
                     <form action="#" name="COURIER_STATUS" method="post" data-validate>
-                        <div class="table">
+                        <div class="table table--no-mobile">
                             <div class="row no-bg row--align-start">
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block">
                                         <p class="form-block__title">New</p>
                                         <label class="form-block__input-wrap">
@@ -183,7 +199,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block">
                                         <p class="form-block__title">Ready</p>
                                         <label class="form-block__input-wrap">
@@ -194,7 +210,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block">
                                         <p class="form-block__title">Going to die </p>
                                         <label class="form-block__input-wrap">
@@ -205,7 +221,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block">
                                         <p class="form-block__title">Suspicious</p>
                                         <label class="form-block__input-wrap">
@@ -216,7 +232,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block">
                                         <p class="form-block__title">Die</p>
                                         <label class="form-block__input-wrap">

@@ -28,7 +28,7 @@
                         <input type="hidden" name="PACKAGE_ID" value="123">
                         <div class="form-row">
                             <div class="row">
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block">
                                         <p class="form-block__title">Назначение</p>
                                         <label class="form-block__select-wrap">
@@ -41,7 +41,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-5">
+                                <div class="col col-12 col-md-5">
                                     <div class="form-block">
                                         <p class="form-block__title">Адрес</p>
                                         <label class="form-block__select-wrap">
@@ -54,7 +54,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-4">
+                                <div class="col col-12 col-md-4">
                                     <div class="form-block">
                                         <p class="form-block__title">Получатель</p>
                                         <label class="form-block__input-wrap">
@@ -66,8 +66,8 @@
                         </div>
                         <div class="form-row" data-package-inputs>
                             <p class="form-row__title col col-12" style="padding: 0;">Содержимое посылки</p>
-                            <div class="row" data-is="package-edit-row">
-                                <div class="col col-4">
+                            <div class="row mobile-mb-20" data-is="package-edit-row">
+                                <div class="col col-12 col-md-4">
                                     <div class="form-block">
                                         <label class="form-block__input-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/input_flag.png')"></i>
@@ -75,7 +75,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block">
                                         <label class="form-block__input-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/dollar_icon.png')"></i>
@@ -83,7 +83,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block" data-is="number-input">
                                         <label class="form-block__input-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/pack_icon.png')"></i>
@@ -100,12 +100,12 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-2">
+                                <div class="col col-12 col-md-2">
                                     <button type="button" class="btn btn-del" data-delete="/ajax/deletePackageEditRow.php?PACKAGE_ID=123">Удалить</button>
                                 </div>
                             </div>
-                            <div class="row" data-is="package-edit-row">
-                                <div class="col col-4">
+                            <div class="row mobile-mb-20" data-is="package-edit-row">
+                                <div class="col col-12 col-md-4">
                                     <div class="form-block">
                                         <label class="form-block__input-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/input_flag.png')"></i>
@@ -113,7 +113,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block">
                                         <label class="form-block__input-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/dollar_icon.png')"></i>
@@ -121,7 +121,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-3">
+                                <div class="col col-12 col-md-3">
                                     <div class="form-block" data-is="number-input">
                                         <label class="form-block__input-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/pack_icon.png')"></i>
@@ -138,7 +138,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-2">
+                                <div class="col col-12 col-md-2">
                                     <button type="button" class="btn btn-del" data-delete="/ajax/deletePackageEditRow.php?PACKAGE_ID=123">Удалить</button>
                                 </div>
                             </div>
@@ -147,7 +147,7 @@
                         <div class="form-row" data-package-inputs>
                             <p class="form-row__title col col-12" style="padding: 0;">Трек номер</p>
                             <div class="row" data-is="package-edit-row">
-                                <div class="col col-5">
+                                <div class="col col-12 col-md-5">
                                     <div class="form-block">
                                         <label class="form-block__select-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/car_icon.png')"></i>
@@ -160,7 +160,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-5">
+                                <div class="col col-12 col-md-5">
                                     <div class="form-block">
                                         <label class="form-block__input-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/hash_icon.png')"></i>
@@ -168,12 +168,12 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-2">
+                                <div class="col col-12 col-md-2 mobile-mb-20">
                                     <button type="button" class="btn btn-del" data-delete="/ajax/deletePackageEditRow.php?PACKAGE_ID=123">Удалить</button>
                                 </div>
                             </div>
-                            <div class="row" data-is="package-edit-row">
-                                <div class="col col-5">
+                            <div class="row mobile-mb-20" data-is="package-edit-row">
+                                <div class="col col-12 col-md-5">
                                     <div class="form-block">
                                         <label class="form-block__select-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/car_icon.png')"></i>
@@ -186,7 +186,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-5">
+                                <div class="col col-12 col-md-5">
                                     <div class="form-block">
                                         <label class="form-block__input-wrap has-icon">
                                             <i class="icon" style="background-image: url('/static/img/icons/hash_icon.png')"></i>
@@ -194,7 +194,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-2">
+                                <div class="col col-12 col-md-2">
                                     <button type="button" class="btn btn-del" data-delete="/ajax/deletePackageEditRow.php?PACKAGE_ID=123">Удалить</button>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@
                         </div>
                         <div class="form-row">
                             <div class="row">
-                                <div class="col col-8">
+                                <div class="col col-12 col-md-8">
                                     <div class="form-block">
                                         <p class="form-block__title">Комментарий</p>
                                         <label class="form-block__input-wrap">
@@ -210,7 +210,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-4">
+                                <div class="col col-12 col-md-4">
                                     <div class="form-block">
                                         <p class="form-block__title">Магазин</p>
                                         <label class="form-block__input-wrap has-icon">

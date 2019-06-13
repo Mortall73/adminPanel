@@ -77,4 +77,10 @@
 }
 .btns-row {
     padding:  10px 0;
+
+    @media screen and (max-width: $mobile) {
+        .btn {
+            margin-bottom: 10px;
+        }
+    }
 }

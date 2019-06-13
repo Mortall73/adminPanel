@@ -103,6 +103,13 @@
             }
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        flex-wrap: wrap;
+        .btn {
+            margin: 5px 5px;
+        }
+    }
 }
 .users__dropdown {
     background-color: #fff;

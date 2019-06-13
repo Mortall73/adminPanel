@@ -9,7 +9,7 @@ ob_start();
         </div>
         <form class="" action="#" method="post" enctype="multipart/form-data">
             <div class="row">
-                <div class="col col-2">
+                <div class="col col-12 col-md-2">
                     <div class="form-block">
                         <p class="form-block__title">Создано</p>
                         <label class="form-block__input-wrap">
@@ -17,7 +17,7 @@ ob_start();
                         </label>
                     </div>
                 </div>
-                <div class="col col-2">
+                <div class="col col-12 col-md-2">
                     <div class="form-block">
                         <p class="form-block__title">Обновлено</p>
                         <label class="form-block__input-wrap">
@@ -25,7 +25,7 @@ ob_start();
                         </label>
                     </div>
                 </div>
-                <div class="col col-2">
+                <div class="col col-12 col-md-2">
                     <div class="form-block">
                         <p class="form-block__title">Страна</p>
                         <label class="form-block__input-wrap">
@@ -33,7 +33,7 @@ ob_start();
                         </label>
                     </div>
                 </div>
-                <div class="col col-2">
+                <div class="col col-12 col-md-2">
                     <div class="form-block">
                         <p class="form-block__title">Штат</p>
                         <label class="form-block__input-wrap">
@@ -41,7 +41,7 @@ ob_start();
                         </label>
                     </div>
                 </div>
-                <div class="col col-2">
+                <div class="col col-12 col-md-2">
                     <div class="form-block">
                         <p class="form-block__title">Город</p>
                         <label class="form-block__input-wrap">
@@ -49,7 +49,7 @@ ob_start();
                         </label>
                     </div>
                 </div>
-                <div class="col col-2">
+                <div class="col col-12 col-md-2">
                     <div class="form-block">
                         <p class="form-block__title">Адрес</p>
                         <label class="form-block__input-wrap">
@@ -59,7 +59,7 @@ ob_start();
                 </div>
             </div>
             <div class="row">
-                <div class="col col-2">
+                <div class="col col-12 col-md-2">
                     <div class="form-block">
                         <p class="form-block__title">Индекс</p>
                         <label class="form-block__input-wrap">
@@ -67,7 +67,7 @@ ob_start();
                         </label>
                     </div>
                 </div>
-                <div class="col col-5">
+                <div class="col col-12 col-md-5">
                     <div class="form-block">
                         <p class="form-block__title">Комментарий стафера</p>
                         <label class="form-block__input-wrap">
@@ -75,7 +75,7 @@ ob_start();
                         </label>
                     </div>
                 </div>
-                <div class="col col-5">
+                <div class="col col-12 col-md-5">
                     <div class="form-block">
                         <p class="form-block__title">Комментарий для курьера</p>
                         <label class="form-block__input-wrap">

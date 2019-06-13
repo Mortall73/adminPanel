@@ -4,6 +4,10 @@
     box-sizing: border-box;
     border-radius: 4px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: $mobile) {
+        padding: 15px 10px;
+    }
 }
 
 .comment-block {
@@ -80,6 +84,20 @@
             font-size: 13px;
             margin: 0;
             line-height: 16px;
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        &::after {
+            left: 0;
+        }
+
+        .comment-block__header {
+            margin-bottom: 10px;
+        }
+
+        .comment-block__text {
+            margin-left: 0;
         }
     }
 }

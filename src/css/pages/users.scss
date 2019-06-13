@@ -59,4 +59,14 @@
     .search-block .search-block__search {
         padding-right: 10px;
     }
+
+    @media screen and (max-width: $mobile) {
+        flex-wrap: wrap;
+        .search-block {
+            width: 100%;
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
 }

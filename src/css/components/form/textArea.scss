@@ -59,4 +59,10 @@
             }
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        textarea.form-block__input {
+            min-height: 100px;
+        }
+    }
 }

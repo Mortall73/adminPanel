@@ -38,4 +38,22 @@
         }
 
     }
+    
+    @media screen and (max-width: $mobile) {
+        .tabs__header {
+            overflow: hidden;
+            overflow-x: scroll;
+            .tab-button {
+                flex-shrink: 0;
+            }
+        }
+        .tabs-content {
+            padding: 20px 10px;
+            .table {
+                .row {
+                    margin: 0 -10px;
+                }
+            }
+        }
+    }
 }

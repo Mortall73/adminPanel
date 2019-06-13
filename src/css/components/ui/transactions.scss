@@ -8,6 +8,7 @@
     .last-transactions__header {
         padding:  20px 24px;
         position: relative;
+        padding-right: 50px;
     }
     .last-transactions__title {
         font-size: 16px;
@@ -142,5 +143,25 @@
                 }
             }
         }
+    }
+
+    @media screen and (max-width: $mobile) {
+        .last-transactions__list .last-transaction {
+            flex-wrap: wrap;
+            .last-transaction-props {
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                min-width: 100%;
+                max-width: 100%;
+                width: 100%;
+
+                .last-transaction__name, .last-transaction__coast, .last-transaction__time {
+                    width: auto;
+                    margin-bottom: 10px;
+                    white-space: normal;
+                }
+            }
+        }
+
     }
 }

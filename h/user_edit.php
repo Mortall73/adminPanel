@@ -52,115 +52,123 @@
                 </a>
             </div>
             <div class="row">
-                <div class="col col-8">
+                <div class="col col-12 col-md-8">
                     <div class="block-w">
-                        <div class="table">
-                            <div class="table__title">
-                                <span>Адреса для доставки </span>
-                                <a href="#" class="change-link">Управление</a>
-                            </div>
-                            <div class="table__header">
-                                <div class="row">
-                                    <div class="col col-2">
-                                        <span>Дата</span>
+                        <div class="table-wrap">
+                            <div class="table-inner">
+                                <div class="table">
+                                    <div class="table__title">
+                                        <span>Адреса для доставки </span>
+                                        <a href="#" class="change-link">Управление</a>
                                     </div>
-                                    <div class="col col-2">
-                                        <span>ZIP</span>
+                                    <div class="table__header">
+                                        <div class="row">
+                                            <div class="col col-2">
+                                                <span>Дата</span>
+                                            </div>
+                                            <div class="col col-2">
+                                                <span>ZIP</span>
+                                            </div>
+                                            <div class="col col-2">
+                                                <span>Страна</span>
+                                            </div>
+                                            <div class="col col-2">
+                                                <span>Штат</span>
+                                            </div>
+                                            <div class="col col-2 text-center">
+                                                <span>Город</span>
+                                            </div>
+                                            <div class="col col-2 text-center">
+                                                <span>Адрес</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col col-2">
-                                        <span>Страна</span>
+                                    <div class="row">
+                                        <div class="col col-2">
+                                            <span>23.03.19</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span> 90001</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span>United States</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span>California</span>
+                                        </div>
+                                        <div class="col col-2 text-center">
+                                            <span>Los Angeles</span>
+                                        </div>
+                                        <div class="col col-2 text-center">
+                                            <span>Star st 21</span>
+                                        </div>
                                     </div>
-                                    <div class="col col-2">
-                                        <span>Штат</span>
+                                    <div class="row">
+                                        <div class="col col-2">
+                                            <span>23.03.19</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span> 90001</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span>United States</span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span>California</span>
+                                        </div>
+                                        <div class="col col-2 text-center">
+                                            <span>Los Angeles</span>
+                                        </div>
+                                        <div class="col col-2 text-center">
+                                            <span>Star st 21</span>
+                                        </div>
                                     </div>
-                                    <div class="col col-2 text-center">
-                                        <span>Город</span>
-                                    </div>
-                                    <div class="col col-2 text-center">
-                                        <span>Адрес</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-2">
-                                    <span>23.03.19</span>
-                                </div>
-                                <div class="col col-2">
-                                    <span> 90001</span>
-                                </div>
-                                <div class="col col-2">
-                                    <span>United States</span>
-                                </div>
-                                <div class="col col-2">
-                                    <span>California</span>
-                                </div>
-                                <div class="col col-2 text-center">
-                                    <span>Los Angeles</span>
-                                </div>
-                                <div class="col col-2 text-center">
-                                    <span>Star st 21</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-2">
-                                    <span>23.03.19</span>
-                                </div>
-                                <div class="col col-2">
-                                    <span> 90001</span>
-                                </div>
-                                <div class="col col-2">
-                                    <span>United States</span>
-                                </div>
-                                <div class="col col-2">
-                                    <span>California</span>
-                                </div>
-                                <div class="col col-2 text-center">
-                                    <span>Los Angeles</span>
-                                </div>
-                                <div class="col col-2 text-center">
-                                    <span>Star st 21</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="block-w">
-                        <div class="table">
-                            <div class="table__title">
-                                <span>Загруженные документы </span>
-                            </div>
-                            <div class="table__header">
-                                <div class="row">
-                                    <div class="col col-4">
-                                        <span>Дата</span>
+                        <div class="table-wrap">
+                            <div class="table-inner">
+                                <div class="table table--no-mobile">
+                                    <div class="table__title">
+                                        <span>Загруженные документы </span>
                                     </div>
-                                    <div class="col col-4">
-                                        <span>Название</span>
+                                    <div class="table__header">
+                                        <div class="row">
+                                            <div class="col col-4">
+                                                <span>Дата</span>
+                                            </div>
+                                            <div class="col col-4">
+                                                <span>Название</span>
+                                            </div>
+                                            <div class="col col-4">
+                                                <span>URL</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col col-4">
-                                        <span>URL</span>
+                                    <div class="row">
+                                        <div class="col col-4">
+                                            <span>23.03.19</span>
+                                        </div>
+                                        <div class="col col-4">
+                                            <span>firstdoc.pdf</span>
+                                        </div>
+                                        <div class="col col-4">
+                                            <span><a href="#" class="link">docs/firstdoc.pdf</a></span>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-4">
-                                    <span>23.03.19</span>
-                                </div>
-                                <div class="col col-4">
-                                    <span>firstdoc.pdf</span>
-                                </div>
-                                <div class="col col-4">
-                                    <span><a href="#" class="link">docs/firstdoc.pdf</a></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-4">
-                                    <span>23.03.19</span>
-                                </div>
-                                <div class="col col-4">
-                                    <span>firstdoc.pdf</span>
-                                </div>
-                                <div class="col col-4">
-                                    <span><a href="#" class="link">docs/firstdoc.pdf</a></span>
+                                    <div class="row">
+                                        <div class="col col-4">
+                                            <span>23.03.19</span>
+                                        </div>
+                                        <div class="col col-4">
+                                            <span>firstdoc.pdf</span>
+                                        </div>
+                                        <div class="col col-4">
+                                            <span><a href="#" class="link">docs/firstdoc.pdf</a></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -203,57 +211,61 @@
                         </form>
                     </div>
                     <div class="block-w">
-                        <div class="table">
-                            <div class="table__title">
-                                <span>История входов </span>
-                                <a href="#" class="change-link">Управление</a>
-                            </div>
-                            <div class="table__header">
-                                <div class="row">
-                                    <div class="col col-2">
-                                        <span>Дата</span>
+                        <div class="table-wrap">
+                            <div class="table-inner">
+                                <div class="table">
+                                    <div class="table__title">
+                                        <span>История входов </span>
+                                        <a href="#" class="change-link">Управление</a>
                                     </div>
-                                    <div class="col col-2">
-                                        <span>IP</span>
+                                    <div class="table__header">
+                                        <div class="row">
+                                            <div class="col col-2">
+                                                <span>Дата</span>
+                                            </div>
+                                            <div class="col col-2">
+                                                <span>IP</span>
+                                            </div>
+                                            <div class="col col-2">
+                                                <span>Страна</span>
+                                            </div>
+                                            <div class="col col-3">
+                                                <span>User Agent</span>
+                                            </div>
+                                            <div class="col col-1 text-center">
+                                                <span>Язык</span>
+                                            </div>
+                                            <div class="col col-2 text-center">
+                                                <span>Часовой пояс</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col col-2">
-                                        <span>Страна</span>
+                                    <div class="row">
+                                        <div class="col col-2">
+                                            <span>23.03.19 в 15:19 </span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span> 128.73.91.58   </span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <span><img src="/static/img/icons/usa.png" class="center-img" alt=""></span>
+                                        </div>
+                                        <div class="col col-3 text-overflow">
+                                            <span>Mozilla/5.0 (Windows NT 10.0..</span>
+                                        </div>
+                                        <div class="col col-1 text-center">
+                                            <span>ru_RU</span>
+                                        </div>
+                                        <div class="col col-2 text-center">
+                                            <span>0 GMT</span>
+                                        </div>
                                     </div>
-                                    <div class="col col-3">
-                                        <span>User Agent</span>
-                                    </div>
-                                    <div class="col col-1 text-center">
-                                        <span>Язык</span>
-                                    </div>
-                                    <div class="col col-2 text-center">
-                                        <span>Часовой пояс</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-2">
-                                    <span>23.03.19 в 15:19 </span>
-                                </div>
-                                <div class="col col-2">
-                                    <span> 128.73.91.58   </span>
-                                </div>
-                                <div class="col col-2">
-                                    <span><img src="/static/img/icons/usa.png" class="center-img" alt=""></span>
-                                </div>
-                                <div class="col col-3 text-overflow">
-                                    <span>Mozilla/5.0 (Windows NT 10.0..</span>
-                                </div>
-                                <div class="col col-1 text-center">
-                                    <span>ru_RU</span>
-                                </div>
-                                <div class="col col-2 text-center">
-                                    <span>0 GMT</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-4">
+                <div class="col col-12 col-md-4">
                     <div class="block-w">
                         <form action="#" name="USER_DATA" class="task-data-form" method="post">
                             <div class="form-block user-edit-unlock">
