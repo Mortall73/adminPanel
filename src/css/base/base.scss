@@ -4,6 +4,11 @@ body {
     font-size: 15px;
     color: $main;
     background-color: #f5f6fa;
+
+    &.is-fixed {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 .global-page-content {
     overflow: hidden;
@@ -21,6 +26,11 @@ main {
     max-width: 100%;
     padding-right: 40px;
     box-sizing: border-box;
+
+    @media screen and (max-width: $desctop) {
+        margin-left: 0;
+        padding: 0 10px;
+    }
 }
 
 img {

@@ -73,7 +73,8 @@ module.exports = (env, argv) => ({
             $: 'jquery',
             jQuery: 'jquery',
             Swal: 'sweetalert2',
-            Pristine: 'pristinejs'
+            Pristine: 'pristinejs',
+            SimpleBar: 'simplebar'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

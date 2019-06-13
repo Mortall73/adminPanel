@@ -38,10 +38,39 @@ import packageEdit from './js/page/package-edit';
 /*
 * init scripts
 */
-axios.defaults.headers.common['Authorization'] = window.appConfig.authorization || null;
+//axios.defaults.headers.common['Authorization'] = window.appConfig.authorization || null;
 modulesLoader();
 validate();
 
 packages.init();
 packageEdit.init();
 /* end init scripts */
+
+window.addEventListener('DOMContentLoaded', () => {
+    var event = new CustomEvent('AxiosLoaded', { 'detail': axios });
+    
+    // target события может быть любой элемент
+    document.dispatchEvent(event);
+
+    let vp = document.querySelector('#viewport');
+
+    if (window.innerWidth <= 767) {
+        appConfig.mobileVersion = true;
+        vp.setAttribute('content', 'width=device-width,initial-scale=1');
+    } else {
+        appConfig.mobileVersion = false;
+        vp.setAttribute('content', 'width=' + 1280);
+    }
+
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth <= 767) {
+            appConfig.mobileVersion = true;
+            vp.setAttribute('content', 'width=device-width,initial-scale=1');
+        } else {
+            appConfig.mobileVersion = false;
+            vp.setAttribute('content', 'width=' + 1280);
+        }
+
+    });
+});

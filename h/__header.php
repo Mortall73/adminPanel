@@ -11,6 +11,7 @@
                             alaska delivery
                         </span>
                     </a>
+                    <div class="main-menu__mobile-btn" data-is="mobile-menu"><i class="line"></i></div>
                 </li>
                 <li class="main-menu__item">
                     <a href="#" class="main-menu__link is-active">

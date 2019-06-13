@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="/dist/main.css">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
     <meta name="jwt" content="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9eyJpZCI6MTMzNywidXNlcm5hbWUiOiJqb2huLmRvZSJ9EvTdOJS-fbffGHLyND3BMDwWE22zUBOCRspPZEHlNEw">
     <script>
         window.appConfig = {};
         window.appConfig = {
             authorization: 'Bearer' + document.querySelector('meta[name="jwt"]').getAttribute('content'),
+            mobileVersion: false
         };
+        
+        document.addEventListener('AxiosLoaded', function (e) {
+            var axios = e.detail;
+            axios.defaults.headers.common['Authorization'] = window.appConfig.authorization || null;
+            //console.log(axios.defaults);
+        });
     </script>
 </head>

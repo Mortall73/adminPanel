@@ -69,4 +69,9 @@ footer {
         color: #b6bac3;
         margin: 0;
     }
+
+    @media screen and (max-width: $desctop) {
+        padding: 20px 10px 20px 10px;
+        margin-left: 0;
+    }
 }

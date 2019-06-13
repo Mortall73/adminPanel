@@ -41,6 +41,10 @@ header {
         margin: 0;
         list-style: none;
         padding-left: 0;
+
+        .main-menu__mobile-btn {
+            display: none;
+        }
     }
 
     .logo-wrap {
@@ -188,6 +192,119 @@ header {
     }
     .last-posts {
         padding-left: 85px;
+    }
+
+    @media screen and (max-width: $desctop){
+        left: 0;
+        right: 0;
+        bottom: auto;
+        min-height: auto;
+        height: auto;
+        width: 100%;
+        z-index: 10;
+        padding-top: 56px;
+        
+        &.header--fh {
+            height: 100vh;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        .main-menu__item:not(.logo-wrap), .transaction-btn-wrap, .last-posts {
+            display: none;
+        }
+
+        .main-menu {
+            .logo-wrap {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                background: #fff;
+                z-index: 2;
+
+                .main-menu__link {
+                    display: inline-block;
+                }
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 60px;
+                    background-color: $blue;
+                    bottom: 0;
+                    z-index: -1;
+                }
+            }
+            .main-menu__mobile-btn {
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                box-sizing: border-box;
+                border: 1px solid $blue;
+                margin-top: -20px;
+
+                &.active {
+                    .line {
+                        transform: scale(0);
+                    }
+                    &::before {
+                        transform: rotate(45deg);
+                        top: 50%;
+                        margin-top: -1px;
+                    }
+                    &::after {
+                        transform: rotate(-45deg);
+                        bottom: 50%;
+                    }
+                }
+
+                .line {
+                    position: absolute;
+                    width: 30px;
+                    height: 1px;
+                    background-color: $blue;
+                    top: 50%;
+                    left: 50%;
+                    right: 0;
+                    margin-left: -15px;
+                    transform: scale(1);
+                    transform-origin: 50%;
+                    transition: all .3s;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 1px;
+                    background-color: $blue;
+                    top: 10px;
+                    left: 50%;
+                    right: 0;
+                    margin-left: -15px;
+                    transition: all .3s;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 1px;
+                    background-color: $blue;
+                    bottom: 10px;
+                    left: 50%;
+                    right: 0;
+                    margin-left: -15px;
+                    transition: all .3s;
+                }
+            }
+        }
     }
 }
 
