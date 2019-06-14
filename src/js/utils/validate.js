@@ -13,7 +13,7 @@ Pristine.addValidator("select-required", function(value, param1, param2) {
 }, "Поле должно быть выбранно", 5, false);
 
 export default (onceForm) => {
-    let $formValidate = $('[data-validate]');
+    let $formValidate = $('[data-validate]:not([data-is="ajax-submit"])');
     let defaultConfig = {
         // class of the parent element where the error/success class is added
         classTo: 'form-block',
@@ -31,7 +31,7 @@ export default (onceForm) => {
         $formValidate.each((i, form) => {
             let pristine = new Pristine(form, defaultConfig);
 
-            form.addEventListener('submit', function (e) {
+            $(form).on('submit', function (e) {
                 e.preventDefault();
                 // check if the form is valid
                 let valid = pristine.validate(); // returns true or false

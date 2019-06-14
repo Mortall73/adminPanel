@@ -1,0 +1,83 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 -10px;
+
+    .gallery__item {
+        margin: 0 10px 20px 10px;
+        width: calc(100%/4 - 20px);
+        overflow: hidden;
+
+        .gallery__item-inner {
+            padding-top: 70%;
+            display: block;
+            position: relative;
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            img {
+                display: block;
+                width: auto;
+                height: auto;
+                min-width: 100%;
+                min-height: 100%;
+                max-width: none;
+                max-height: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                box-shadow: 0 0 #000;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(255, 255, 255, 0.65) url('/static/img/icons/search.png') center no-repeat;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s;
+            }
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        .gallery__item {
+            width: calc(100%/2 - 20px);
+        }
+    }
+    @media screen and (max-width: $mobile) {
+        margin: 0;
+
+        .gallery__item {
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
+    }
+}
+
+[data-is="gallery"]:not(.gallery) {
+    a {
+        display: inline-block;
+    }
+    img {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 20px;
+    }
+}

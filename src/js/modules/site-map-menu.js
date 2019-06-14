@@ -6,6 +6,7 @@ export default (container) => {
     $links.on('mouseenter', (e) => {
         let url = e.target.href;
         let $frame = $('<iframe></iframe>');
+        $frameBlock.html('');
         $frameBlock.append($frame);
 
         $frame.attr('src', url);
@@ -23,8 +24,5 @@ export default (container) => {
         injectCSS();
     });
 
-    $links.on('mouseleave', (e) => {
-        $frameBlock.html('');
-
-    });
+    
 }

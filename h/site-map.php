@@ -19,6 +19,13 @@
                         </a>
                     </li>
                     <li class="main-menu__item">
+                        <a href="/h/styles.php" class="main-menu__link" data-sitemap-link>
+                            <span class="main-menu__link-text">
+                                Страница стилей
+                            </span>
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
                         <a href="/h/index.php" class="main-menu__link" data-sitemap-link>
                             <span class="main-menu__link-text">
                                 Главная

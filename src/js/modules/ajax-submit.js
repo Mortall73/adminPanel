@@ -6,6 +6,25 @@ export default (form) => {
     let method = 'POST';
     let $customSubmitButtons = $form.find('[data-submit]');
 
+    let isValid = true;
+
+    let defaultConfig = {
+        // class of the parent element where the error/success class is added
+        classTo: 'form-block',
+        errorClass: 'has-error',
+        successClass: 'has-success',
+        // class of the parent element where error text element is appended
+        errorTextParent: 'form-block',
+        // type of element to create for the error text
+        errorTextTag: 'div',
+        // class of the error text element
+        errorTextClass: 'text-error'
+    };
+
+    if (form.hasAttribute('data-validate')) {
+        new Pristine(form, defaultConfig);
+    }
+
     let methods = {
         send() {
             let data = new FormData(form);
@@ -44,15 +63,17 @@ export default (form) => {
                     }
                 });
 
+                form.reset();
+
             }).catch((error) => {
                 console.log(error);
+                form.reset();
             });
         }
     };
 
     $form.on('submit', (e) => {
         e.preventDefault();
-        let isValid = true;
 
         if (form.hasAttribute('data-validate')) {
             isValid = validate($form[0]);

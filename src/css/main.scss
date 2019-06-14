@@ -1,4 +1,5 @@
 @import "vendors/bootstrap-grid.min.css";
+@import "vendors/lightgallery";
 
 @import "base/normalize";
 @import "base/variables";
@@ -21,12 +22,14 @@
 @import "components/ui/breadcrumbs";
 @import "components/ui/paginate";
 @import "components/ui/blocks";
+@import "components/ui/gallery";
 
 @import "components/form/form";
 @import "components/form/textField";
 @import "components/form/selectGroup";
 @import "components/form/checkbox";
 @import "components/form/textArea";
+@import "components/form/radioButton";
 
 @import "components/side-menu";
 @import "components/news-card";

@@ -8,7 +8,7 @@ export default (module) => {
             moduleFunc(module);
             console.log(`%c Module loaded: ${moduleName}`, 'color: #67db00');
         } catch (err) {
-            console.log(`%c Module error: ${err}`, 'color: #fb1f1f');
+            console.log(`%c Module ${moduleName} error: ${err}`, 'color: #fb1f1f');
         };
     });
 };

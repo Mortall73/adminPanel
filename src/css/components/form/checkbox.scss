@@ -3,6 +3,14 @@
     width: 100%;
     max-width: 100%;
 
+    &.has-error {
+        .form-block__checkbox-wrap {
+            .checkbox-custom {
+                border: 1px solid $red !important;
+            }
+        }
+    }
+
     .form-block__title {
         font-size: 15px;
         color: $gray;
@@ -19,6 +27,19 @@
 
         &:hover {
             cursor: pointer;
+
+            .checkbox-custom {
+                border-color: $green;
+            }
+
+            .form-block__checkbox {
+
+                &:checked {
+                    + .checkbox-custom {
+                        border-color: $green;
+                    }
+                }
+            }
         }
 
         .checkbox-custom {
