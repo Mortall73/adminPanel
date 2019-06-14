@@ -135,7 +135,7 @@
                 </p>
             </div>
         </div>
-        <div>
+        <div style="margin-bottom: 30px;">
             <h2>Табы:</h2>
             <div class="tabs" data-is="tabs">
                 <div class="tabs__header">
@@ -155,6 +155,81 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="block-w">
+            <h2>Repeater:</h2>
+            <!-- outer repeater -->
+            <form class="repeater">
+                <div data-repeater-list="outer-list">
+                    <div data-repeater-item >
+                        <div class="row">
+                            <div class="col col-12 col-md-10 form-block">
+                                <label class="form-block__input-wrap">
+                                    <input class="form-block__input" type="text" name="text-input" value="A"/>
+                                </label>
+                            </div>
+                            <div class="col col-12 col-md-2 form-block">
+                                <label class="btn btn-del">
+                                    Delete
+                                    <input data-repeater-delete type="button" value="Delete" style="display: none;"/>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- innner repeater -->
+                        <div class="inner-repeater">
+                            <div data-repeater-list="inner-list">
+                                <div data-repeater-item >
+                                    <div class="row">
+                                        <div class="col col-12 col-md-10 form-block">
+                                            <label class="form-block__input-wrap">
+                                                <input class="form-block__input" type="text" name="text-input-b" value="B"/>
+                                            </label>
+                                        </div>
+                                        <div class="col col-12 col-md-2 form-block">
+                                            <label class="btn btn-del">
+                                                Delete
+                                                <input data-repeater-delete type="button" value="Delete" style="display: none;"/>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-block">
+                                <div class="form-block__title">Add 1 row</div>
+                                <label class="btn btn-add btn-green">
+                                    Add
+                                    <input hidden data-repeater-create type="button" value="Add"/>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-block">
+                    <div class="form-block__title">Add 2 row</div>
+                    <label class="btn btn-add btn-green">
+                        Add
+                        <input hidden data-repeater-create type="button" value="Add"/>
+                    </label>
+                </div>
+            </form>
+            <script>
+                $(document).ready(function () {
+                    $('.repeater').repeater({
+                        // (Required if there is a nested repeater)
+                        // Specify the configuration of the nested repeaters.
+                        // Nested configuration follows the same format as the base configuration,
+                        // supporting options "defaultValues", "show", "hide", etc.
+                        // Nested repeaters additionally require a "selector" field.
+                        repeaters: [{
+                            // (Required)
+                            // Specify the jQuery selector for this nested repeater
+                            selector: '.inner-repeater'
+                        }]
+                    });
+                });
+            </script>
         </div>
     </main>
     <footer>

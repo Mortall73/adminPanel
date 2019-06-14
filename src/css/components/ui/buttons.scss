@@ -46,6 +46,10 @@
             background-color: darken($light, 2);
         }
     }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 .btn.btn-m {
     font-size:  15px;

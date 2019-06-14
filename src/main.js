@@ -4,11 +4,14 @@
 import $ from 'jquery'; //! некоторые зависимости должны быть определены в webpack.config.js в секции webpack.ProvidePlugin
 import Swal from 'sweetalert2'; //! некоторые зависимости должны быть определены в webpack.config.js в секции webpack.ProvidePlugin
 
+window.$ = $;
+
 import './js/vendors/dropzone.min';
 import './js/vendors/dropzone.min.css';
 import 'simplebar';
 import 'simplebar/dist/simplebar.css';
 import axios from 'axios';
+require('jquery.repeater');
 /* end import global vendors */
 
 /*
