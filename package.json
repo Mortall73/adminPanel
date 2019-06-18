@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development"
+    "dev": "webpack-dev-server --mode development"
   },
   "author": "",
   "license": "ISC",

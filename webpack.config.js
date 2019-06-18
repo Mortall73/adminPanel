@@ -110,7 +110,7 @@ module.exports = (env, argv) => ({
         contentBase: path.join(__dirname, 'dist'),
         watchContentBase: true,
         compress: true,
-        open: true
-
+        open: true,
+        writeToDisk: true
     }
 });
