@@ -21,18 +21,23 @@
                 <a href="#" class="btn btn-info" data-dropdown="#dropdown-users">Выбрать пользователей</a>
                 <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor users__dropdown"
                      id="dropdown-users">
-                    <form action="/ajax/ajaxResponse/usersSearch.php"
+                    <form action="#"
+                          data-action-search="/ajax/usersSearch/search.php"
+                          data-action-groups="/ajax/usersSearch/get-g.php"
+                          data-action-users="/ajax/usersSearch/get-u.php"
+                          data-post-id="123"
                           name="users_search_form"
-                          method="post"
+                          method="GET"
                           enctype="application/x-www-form-urlencoded"
                           data-is="users-search"
                     >
+                        <input type="checkbox" hidden name="all[]" data-all>
                         <label class="search-block">
-                            <input type="text" name="q" value="" class="search-block__search" autocomplete="off" data-search-input>
+                            <input type="text" name="query" value="" class="search-block__search" autocomplete="off" data-search-input>
                             <button type="submit" class="search-block__submit"></button>
                         </label>
                         <div class="users-list" data-users-container>
-                            <p class="users-list__preload" style="display: none;" data-preload>Загрузка...</p>
+                            
                         </div>
                         <div class="btn-wrap text-right">
                             <button type="submit" class="btn btn-blue btn-m" data-check-all>Выбрать всех</button>

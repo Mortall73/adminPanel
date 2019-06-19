@@ -160,9 +160,63 @@
         .form-block {
             padding-left: 10px;
         }
+
+        .no-found {
+            font-size: 13px;
+            margin: 0 0px 15px 20px;
+            color: rgba(255, 0, 0, 0.55);
+        }
+
         .users-section__title {
             position: relative;
             margin-top: 0;
+            display: flex;
+            align-items: center;
+
+            .users-section__checkbox {
+                margin-right: 10px;
+                margin-top: -3px;
+
+                &:hover {
+                    cursor: pointer;
+
+                    .checkbox-custom {
+                        border: 1px solid $green;
+                    }
+                }
+
+                .checkbox-custom {
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid $gray;
+                    border-radius: 3px;
+                    background: #fff;
+                    position: relative;
+                }
+
+                input[type="checkbox"]:checked {
+                    + .checkbox-custom {
+                        border-color: $green;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 10px;
+                            height: 5px;
+                            border-left: 1px solid #5eb76f;
+                            border-bottom: 1px solid #5eb76f;
+                            background: #fff;
+                            transform: rotate(-50deg);
+                            margin-top: -5px;
+                            margin-left: -3px;
+                            box-shadow: 0 2px #fff;
+                        }
+                    }
+                }
+            }
             
             &:hover {
                 cursor: pointer;
