@@ -16,11 +16,5 @@
             authorization: 'Bearer' + document.querySelector('meta[name="jwt"]').getAttribute('content'),
             mobileVersion: false
         };
-        
-        document.addEventListener('AxiosLoaded', function (e) {
-            var axios = e.detail;
-            axios.defaults.headers.common['Authorization'] = window.appConfig.authorization || null;
-            //console.log(axios.defaults);
-        });
     </script>
 </head>
