@@ -171,10 +171,10 @@ export default (module) => {
         let $group = $usersContainer.find(`[data-group-id="${user.role_id}"]`);
 
         let inputTmpl = `<input class="form-block__checkbox"
-                                                   type="checkbox" name="${user.role}[${user.id}]" value="${user.login}">`;
+                                                   type="checkbox" name="users[${user.id}]" value="${user.login}">`;
         if (user.checked) {
             inputTmpl =  `<input class="form-block__checkbox"
-                                                   type="checkbox" name="${user.role}[${user.id}]" value="${user.login}" checked>`;
+                                                   type="checkbox" name="users[${user.id}]" value="${user.login}" checked>`;
         }
 
         let userTmpl = `<div class="form-block">
@@ -188,7 +188,7 @@ export default (module) => {
         $group.find('.no-found').remove();
         $group.append(userTmpl);
 
-        $group.find(`input[name="${user.role}[${user.id}]"]`).on('change', (e) => {
+        $group.find(`input[name="users[${user.id}]"]`).on('change', (e) => {
             //let name = e.target.name;
             if ($(e.target).prop('checked') == true) {
                 user.checked = true;
@@ -205,8 +205,8 @@ export default (module) => {
         });
 
         checked_users.forEach(ch_user => {
-            if(`${ch_user.role}${ch_user.id}` == `${user.role}${user.id}`) {
-                $group.find(`input[name='${user.role}[${user.id}]'`).attr('checked', true).prop('checked', true);
+            if(ch_user.id == user.id) {
+                $group.find(`input[name='users[${user.id}]'`).attr('checked', true).prop('checked', true);
             }
         });
     }
