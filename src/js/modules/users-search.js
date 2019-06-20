@@ -101,6 +101,13 @@ export default (module) => {
             if (value == '' || value == ' ') {
                 clearGroups();
                 let users = init_users.slice(0); // *2 переиспользуем массив с изначальными пользователями при пустом запросе
+
+                checked_users.forEach(ch_user => {
+                    if (users.indexOf(ch_user) == -1) {
+                        users.push(ch_user);
+                    }
+                });
+
                 users.forEach(user => {
                     renderUsers(user);
                 });
@@ -116,7 +123,7 @@ export default (module) => {
             console.log(err);
         });
 
-        let $checkboxes = $(module).find('.form-block input[type="checkbox"], [data-check-all]');
+        let $checkboxes = $(module).find('.form-block input[type="checkbox"]');
         $checkboxes.prop('checked', false).prop('disabled', false);
     }
 
@@ -181,22 +188,24 @@ export default (module) => {
         $group.find('.no-found').remove();
         $group.append(userTmpl);
 
-        $group.find('input[type="checkbox"]').on('change', (e) => {
-            let name = e.target.name;
+        $group.find(`input[name="${user.role}[${user.id}]"]`).on('change', (e) => {
+            //let name = e.target.name;
             if ($(e.target).prop('checked') == true) {
-                if (checked_users.indexOf(name) == -1) {
-                    checked_users.push(name);
+                user.checked = true;
+                if (checked_users.indexOf(user) == -1 && user.checked == true) {
+                    checked_users.push(user);
                 }
             } else {
-                if (checked_users.indexOf(name) != -1) {
-                    let idx = checked_users.indexOf(name);
+                user.checked = false;
+                if (checked_users.indexOf(user) != -1) {
+                    let idx = checked_users.indexOf(user);
                     checked_users.splice(idx, 1);
                 }
             }
         });
 
-        checked_users.forEach(value => {
-            if(value == `${user.role}[${user.id}]`) {
+        checked_users.forEach(ch_user => {
+            if(`${ch_user.role}${ch_user.id}` == `${user.role}${user.id}`) {
                 $group.find(`input[name='${user.role}[${user.id}]'`).attr('checked', true).prop('checked', true);
             }
         });

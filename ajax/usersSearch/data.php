@@ -4,11 +4,11 @@ return [
     [
         'id' => 1,
         'title' => 'Админы',
-        'checked' => true,
+        'checked' => false,
         'users' => [
-            ['id' =>  1, 'name'=> null, 'checked' => true, 'login'=> "admin", 'role'=> "Admin", 'role_id'=> 1],
+            ['id' =>  1, 'name'=> null, 'checked' => false, 'login'=> "admin", 'role'=> "Admin", 'role_id'=> 1],
             ['id' =>  2, 'name'=> null, 'checked' => false, 'login'=> "admin2", 'role'=> "Admin", 'role_id'=> 1],
-            ['id' =>  3, 'name'=> null, 'checked' => true, 'login'=> "nagibator666", 'role'=> "Admin", 'role_id'=> 1],
+            ['id' =>  3, 'name'=> null, 'checked' => false, 'login'=> "nagibator666", 'role'=> "Admin", 'role_id'=> 1],
             ['id' =>  4, 'name'=> null, 'checked' => false, 'login'=> "admin4", 'role'=> "Admin", 'role_id'=> 1],
         ]
     ],
