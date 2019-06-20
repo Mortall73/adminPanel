@@ -1,6 +1,6 @@
 import Linechart from '../components/linechart';
 import axios from 'axios';
-
+// console.log(`%c Axios: set header Authorization`, 'color: #67db00');
 let chart = document.getElementById('chart');
 let chartUrl = $(chart).data('url');
 let $chartForm = $('[data-graph-form]');
@@ -23,6 +23,8 @@ $graphSelect.on('change', (e) => {
 });
 
 function loadCartData() {
+    axios.defaults.headers.common['Authorization'] = window.appConfig.authorization;
+
     return axios({
         method: 'get',
         url: chartUrl
