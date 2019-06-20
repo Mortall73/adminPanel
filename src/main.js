@@ -12,7 +12,8 @@ import 'simplebar/dist/simplebar.css';
 import axios from 'axios';
 require('jquery.repeater');
 /* end import global vendors */
-
+axios.defaults.headers.common['Authorization'] = window.appConfig.authorization;
+console.log(`%c Axios: set header Authorization`, 'color: #67db00');
 /*
 * import utils js
 */
@@ -36,8 +37,7 @@ import packages from './js/page/packages';
 import packageEdit from './js/page/package-edit';
 /*end import pages scripts */
 
-axios.defaults.headers.common['Authorization'] = 'Bearer' + document.querySelector('meta[name="jwt"]').getAttribute('content');
-console.log(`%c Axios: set header Authorization`, 'color: #67db00');
+
 
 /*
 * init scripts

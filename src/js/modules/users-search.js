@@ -41,50 +41,52 @@ export default (module) => {
     });
 
     function init() {
-       axios.get(groupsUrl, {
-           params: {
-               post_id: postID
-           }
-       }).then(response => {
+        axios.defaults.headers.common['Authorization'] = window.appConfig.authorization;
 
-           init_groups = response.data;
-           renderGroups();
+        axios.get(groupsUrl, {
+            params: {
+                post_id: postID
+            }
+        }).then(response => {
 
-           init_groups.forEach(group => {
+            init_groups = response.data;
+            renderGroups();
 
-               userLoadPromises.push(new Promise((resolve) => { // заполняем массив промисов для каждой группы, что бы потом дождатся их загрузки и отрендерить (1)
-                   axios({
-                       url: usersUrl,
-                       method: 'GET',
-                       params: {
-                           group: group.id,
-                           post_id: postID
-                       }
-                   }).then(response => {
-                       response.data.users.forEach(user => {
+            init_groups.forEach(group => {
 
-                           if (init_users.indexOf(user) == -1) { // пушим пользователей в общий массив для переиспользования (2)
-                               init_users.push(user);
-                           }
+                userLoadPromises.push(new Promise((resolve) => { // заполняем массив промисов для каждой группы, что бы потом дождатся их загрузки и отрендерить (1)
+                    axios({
+                        url: usersUrl,
+                        method: 'GET',
+                        params: {
+                            group: group.id,
+                            post_id: postID
+                        }
+                    }).then(response => {
+                        response.data.users.forEach(user => {
 
-                       });
+                            if (init_users.indexOf(user) == -1) { // пушим пользователей в общий массив для переиспользования (2)
+                                init_users.push(user);
+                            }
 
-                       resolve();
-                   }).catch(error => {
-                       console.log(error);
-                   });
-               }));
+                        });
 
-           });
+                        resolve();
+                    }).catch(error => {
+                        console.log(error);
+                    });
+                }));
 
-           Promise.all(userLoadPromises).then(value => { // *1 дожидаемся когда все пользователи загружены и рендерим
-               init_users.forEach(user => {
-                   renderUsers(user);
-               })
-           });
-       }).catch(error => {
-           console.log(error);
-       })
+            });
+
+            Promise.all(userLoadPromises).then(value => { // *1 дожидаемся когда все пользователи загружены и рендерим
+                init_users.forEach(user => {
+                    renderUsers(user);
+                })
+            });
+        }).catch(error => {
+            console.log(error);
+        })
     }
 
 
