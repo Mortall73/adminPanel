@@ -665,7 +665,18 @@
 
         <div class="block-w">
             <h2>Ajax modal:</h2>
-            <a href="#" class="link" data-is="ajax-modal" data-url="/ajax/getSettingEdit.php">get ajax modal</a>
+            <a href="#" class="link" data-is="ajax-modal" data-url="/ajax/getSettingEdit.php">get ajax modal</a> <br>
+            <a href="#" class="link" data-is="ajax-modal" data-target="#modal-id">get modal</a>
+            <div hidden>
+                <div id="modal-id">
+                    <div class="modal-inner">
+                        <p class="modal-title">Title</p>
+                        <p class="modal-text">
+                            Text example
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="block-w">
