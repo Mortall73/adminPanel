@@ -818,6 +818,10 @@
                 </div>
             </div>
         </div>
+        <div class="block-w">
+            <p class="h2">Icons:</p>
+            <a href="https://cdn.materialdesignicons.com/3.7.95/" class="link">https://cdn.materialdesignicons.com/3.7.95/</a>
+        </div>
     </main>
     <footer>
         <p class="footer-copyright">Alaska-Delivery © 2019. All rights reserved.</p>
