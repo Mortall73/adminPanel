@@ -7,6 +7,8 @@ import Swal from 'sweetalert2'; //! некоторые зависимости д
 
 import './js/vendors/dropzone.min';
 import './js/vendors/dropzone.min.css';
+import './js/vendors/util';
+import './js/vendors/bootstrap.bundle';
 import 'simplebar';
 import 'simplebar/dist/simplebar.css';
 import axios from 'axios';
