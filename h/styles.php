@@ -107,30 +107,62 @@
                                 Text example
                             </p>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
                                 Запустить модальное окно
                             </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2"  >
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form action="#" method="post" data-is="ajax-submit"
+                                      data-validate>
+                                    <div class="form-block">
+                                        <p class="form-block__title">Название сайта</p>
+                                        <label class="form-block__input-wrap">
+                                            <input class="form-block__input" type="text" name="SETTING_TITLE" placeholder="Название" value=""
+                                                   required
+                                                   data-pristine-not-empty
+                                                   data-pristine-required-message="Поле обязательно для заполнения">
+                                        </label>
                                     </div>
-                                </div>
+                                    <div class="form-block">
+                                        <p class="form-block__title">Название сайта</p>
+                                        <label class="form-block__select-wrap">
+                                            <select type="text" name="SETTING_TYPE" class="form-block__select"
+                                                    required
+                                                    data-pristine-required-message="Поле обязательно для заполнения"
+                                                    data-pristine-select-required
+                                            >
+                                                <option value="-1" selected disabled>Выбеите значение</option>
+                                                <option value="Перепродажа">Перепродажа</option>
+                                                <option value="Перепродажа 2">Перепродажа 2</option>
+                                            </select>
+                                            <i class="form-block__select-icon"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-block">
+                                        <p class="form-block__title">Название сайта</p>
+                                        <label class="form-block__checkbox-wrap">
+                                            <input class="form-block__checkbox" type="checkbox" name="SETTING_1" value="true" checked >
+                                            <span class="checkbox-custom"></span>
+                                            <span class="form-block__checkbox-text">Alaska-Delivery</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-block__checkbox-wrap">
+                                            <input class="form-block__checkbox" type="checkbox" name="SETTING_2" value="true" >
+                                            <span class="checkbox-custom"></span>
+                                            <span class="form-block__checkbox-text">Alaska-Delivery</span>
+                                        </label>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-green btn-save">Сохранить</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

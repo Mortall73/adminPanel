@@ -72,4 +72,8 @@ $(window).on('load', function () {
             vp.setAttribute('content', 'width=' + 1280);
         }
     });
+
+    window.appConfig.closeModal = (id) => {
+        $(id).modal('hide');
+    }
 });
