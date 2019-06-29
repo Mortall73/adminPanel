@@ -54,16 +54,9 @@ packageEdit.init();
 $(window).on('load', function () {
     let vp = document.querySelector('#viewport');
 
-    if (window.innerWidth <= 767) {
-        appConfig.mobileVersion = true;
-        vp.setAttribute('content', 'width=device-width,initial-scale=1');
+    if (vp == undefined) {
+        return false;
     } else {
-        appConfig.mobileVersion = false;
-        vp.setAttribute('content', 'width=' + 1280);
-    }
-
-
-    window.addEventListener('resize', () => {
         if (window.innerWidth <= 767) {
             appConfig.mobileVersion = true;
             vp.setAttribute('content', 'width=device-width,initial-scale=1');
@@ -71,7 +64,20 @@ $(window).on('load', function () {
             appConfig.mobileVersion = false;
             vp.setAttribute('content', 'width=' + 1280);
         }
-    });
+
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 767) {
+                appConfig.mobileVersion = true;
+                vp.setAttribute('content', 'width=device-width,initial-scale=1');
+            } else {
+                appConfig.mobileVersion = false;
+                vp.setAttribute('content', 'width=' + 1280);
+            }
+        }); 
+    }
+
+
 
     window.appConfig.closeModal = (id) => {
         $(id).modal('hide');
