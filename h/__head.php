@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.7.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="/dist/main.css">
     <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
     <meta name="jwt" content="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9eyJpZCI6MTMzNywidXNlcm5hbWUiOiJqb2huLmRvZSJ9EvTdOJS-fbffGHLyND3BMDwWE22zUBOCRspPZEHlNEw">

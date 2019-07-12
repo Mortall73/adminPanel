@@ -6,6 +6,8 @@ import Swal from 'sweetalert2'; //! некоторые зависимости д
 
 import './js/vendors/dropzone.min';
 import './js/vendors/dropzone.min.css';
+import './js/vendors/util';
+import './js/vendors/bootstrap.bundle';
 import 'simplebar';
 import 'simplebar/dist/simplebar.css';
 import axios from 'axios';
@@ -47,13 +49,27 @@ $(window).on('load', function () {
 
     let vp = document.querySelector('#viewport');
 
-    if (window.innerWidth <= 767) {
-        appConfig.mobileVersion = true;
-        vp.setAttribute('content', 'width=device-width,initial-scale=1');
+    if (vp == undefined) {
+        return false;
     } else {
-        appConfig.mobileVersion = false;
-        vp.setAttribute('content', 'width=' + 1280);
-    }
+        if (window.innerWidth <= 767) {
+            appConfig.mobileVersion = true;
+            vp.setAttribute('content', 'width=device-width,initial-scale=1');
+        } else {
+            appConfig.mobileVersion = false;
+            vp.setAttribute('content', 'width=' + 1280);
+        }
+    };
+
+    /*
+     * init scripts
+     */
+    modulesLoader();
+    validate();
+
+    packages.init();
+    packageEdit.init();
+    /* end init scripts */
 
 
     window.addEventListener('resize', () => {
@@ -66,13 +82,10 @@ $(window).on('load', function () {
         }
     });
 
-    /*
-     * init scripts
-     */
-    modulesLoader();
-    validate();
 
-    packages.init();
-    packageEdit.init();
-    /* end init scripts */
+
+
+    window.appConfig.closeModal = (id) => {
+        $(id).modal('hide');
+    };
 });

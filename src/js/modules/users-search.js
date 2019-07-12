@@ -21,6 +21,8 @@ export default (module) => {
 
     let timerID = null;
 
+    let allIsChecked = false;
+
     init();
 
     $searchInput.on('input', (e) => {
@@ -35,9 +37,17 @@ export default (module) => {
 
     $checkAllBtn.on('click', (e) => {
         e.preventDefault();
-        $(module).find('input[type="checkbox"]').prop('checked', true).prop('disabled', true);
-        $(module).find('input[type="checkbox"]').trigger('change');
-        $(module).find('[data-all]').prop('checked', true);
+        if (!allIsChecked) {
+            $(module).find('input[type="checkbox"]').prop('checked', true);
+            $(module).find('input[type="checkbox"]').trigger('change');
+            $(module).find('[data-all]').prop('checked', true);
+        } else {
+            $(module).find('input[type="checkbox"]').prop('checked', false);
+            $(module).find('input[type="checkbox"]').trigger('change');
+            $(module).find('[data-all]').prop('checked', false);
+        }
+
+        allIsChecked = !allIsChecked;
     });
 
     function init() {
@@ -160,11 +170,11 @@ export default (module) => {
         });
         $usersContainer.find('[data-check-all]').on('change', (e) => {
             let $checkboxes = $(e.target).closest('[data-group-id]').find('.form-block input[type="checkbox"]');
-            console.log($(e.target).closest('[data-group-id]'));
+
             if ($(e.target).prop('checked') == true) {
-                $checkboxes.prop('checked', true)
+                $checkboxes.prop('checked', true).prop('disabled', true)
             } else {
-                $checkboxes.prop('checked', false)
+                $checkboxes.prop('checked', false).prop('disabled', false)
             }
         });
     }
