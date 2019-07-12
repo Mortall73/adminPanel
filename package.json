@@ -38,6 +38,7 @@
     "jquery": "^3.4.0",
     "jquery.repeater": "^1.2.1",
     "lightgallery.js": "^1.1.3",
+    "overlayscrollbars": "^1.8.0",
     "pristinejs": "^0.1.6",
     "simplebar": "^4.0.0-alpha.6",
     "sweet-dropdown": "^1.0.0",

@@ -8,6 +8,16 @@ export default (form) => {
     let $form = $(form);
     let isValid = false;
     let timeOutID = null;
+    
+    let instance = OverlayScrollbars(form.querySelector('[data-scroll]'), {
+        className       : "os-theme-dark",
+        sizeAutoCapable : true,
+        paddingAbsolute : true,
+        scrollbars : {
+            clickScrolling : true
+        },
+        autoUpdate: true
+    });
 
     $form.on('submit', (e) => {
         isValid = isValide(form);
@@ -55,6 +65,7 @@ export default (form) => {
 
                     response.data.messages.forEach((message) => {
                         renderMessage(message);
+                        instance.scroll({ y : "100%"  });
                     });
 
                 }

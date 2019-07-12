@@ -4,7 +4,6 @@
 import $ from 'jquery'; //! некоторые зависимости должны быть определены в webpack.config.js в секции webpack.ProvidePlugin
 import Swal from 'sweetalert2'; //! некоторые зависимости должны быть определены в webpack.config.js в секции webpack.ProvidePlugin
 
-
 import './js/vendors/dropzone.min';
 import './js/vendors/dropzone.min.css';
 import 'simplebar';
@@ -14,6 +13,10 @@ require('jquery.repeater');
 /* end import global vendors */
 axios.defaults.headers.common['Authorization'] = window.appConfig.authorization;
 console.log(`%c Axios: set header Authorization`, 'color: #67db00');
+
+import './js/vendors/OverlayScrollbars.css';
+import './js/vendors/OverlayScrollbars';
+import './js/vendors/jquery.overlayScrollbars';
 /*
 * import utils js
 */
@@ -38,18 +41,10 @@ import packageEdit from './js/page/package-edit';
 /*end import pages scripts */
 
 
-
-/*
-* init scripts
-*/
-modulesLoader();
-validate();
-
-packages.init();
-packageEdit.init();
-/* end init scripts */
-
 $(window).on('load', function () {
+
+    $("body").overlayScrollbars({ });
+
     let vp = document.querySelector('#viewport');
 
     if (window.innerWidth <= 767) {
@@ -70,4 +65,14 @@ $(window).on('load', function () {
             vp.setAttribute('content', 'width=' + 1280);
         }
     });
+
+    /*
+     * init scripts
+     */
+    modulesLoader();
+    validate();
+
+    packages.init();
+    packageEdit.init();
+    /* end init scripts */
 });

@@ -27,7 +27,7 @@
                   data-is="chat"
                   data-interval="10000"
             >
-                <div class="chat-dialog-wrap" data-simplebar>
+                <div class="chat-dialog-wrap" data-scroll>
                     <div class="chat-dialog" data-chat-dialog>
                         <div class="chat-message">
                             <div class="chat-message__header">
