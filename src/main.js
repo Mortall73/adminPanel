@@ -45,8 +45,6 @@ import packageEdit from './js/page/package-edit';
 
 $(window).on('load', function () {
 
-    $("body").overlayScrollbars({ });
-
     let vp = document.querySelector('#viewport');
 
     if (vp == undefined) {

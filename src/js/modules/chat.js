@@ -4,6 +4,7 @@ import isValide from '../utils/validate';
 export default (form) => {
     let url = $(form).attr('action');
     let interval = parseInt($(form).data('interval'), 10);
+    let enable_update = parseInt($(form).data('enable-update'), 0);
     let $containerMesages = $(form).find('[data-chat-dialog]');
     let $form = $(form);
     let isValid = false;
@@ -18,6 +19,12 @@ export default (form) => {
         },
         autoUpdate: true
     });
+
+    instance.scroll({ y : "100%"  });
+
+    if (! enable_update) {
+        return;
+    }
 
     $form.on('submit', (e) => {
         isValid = isValide(form);
